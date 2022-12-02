@@ -1,0 +1,603 @@
+//----------------------------------
+// MATERIAL ICONS FONTS
+//----------------------------------
+$material-icons-font-family: Material Symbols Outlined, arial, sans-serif !important;
+
+//----------------------------------
+// FONTS
+//----------------------------------
+$main-font-family: Roboto, arial, sans-serif !important;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+
+//----------------------------------
+// COLORS
+//----------------------------------
+$primary-color: #00be6d;
+$primary-light-color: #e5f9f0;
+$primary-dark-color: #00824b;
+
+$secondary-color: #0a2837;
+$secondary-light-color: #11435c;
+$secondary-lighter-color: #1f7ead;
+
+$gray-color: #b1bac2;
+$gray-light-color: #e5e5e5;
+$gray-lighter-color: #f8f8fa;
+$gray-dark-color: #444444;
+$gray-darker-color: #222222;
+
+$red-color: #d54308;
+$white-color: #fff;
+$black-color: #000;
+
+//----------------------------------
+//BORDER RADIUS
+//----------------------------------
+
+$border-radius: 0.25rem !default;
+$border-radius-lg: 0.3 !default;
+$border-radius-sm: 0.5rem !default;
+
+$rounded-pill: 10rem !default;
+
+//----------------------------------
+//INPUT
+//----------------------------------
+$input-padding-y: 1.125rem; // left and right
+$input-padding-x: 0.625rem; // Top and Bottom
+$input-padding-x-sm: 0.375rem;
+$input-padding-x-lg: 0.75rem;
+
+#main {
+  .highlight {
+    padding: 7px;
+    background-color: #000;
+    border-radius: 6px;
+  }
+  pre {
+    margin-bottom: 0;
+  }
+  .bd-example {
+    padding: 20px 0;
+    background-color: #fff;
+  }
+
+  //Typography css
+
+  /* WEIGHTS */
+  .text-weight-regular {
+    font-weight: $font-weight-regular;
+  }
+
+  .text-weight-semibold {
+    font-weight: $font-weight-semi-bold;
+  }
+
+  .text-weight-medium {
+    font-weight: $font-weight-medium;
+  }
+
+  .text-weight-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  h1,
+  .large-text-1,
+  h2,
+  .large-text-2,
+  h3,
+  .large-text-3,
+  h4,
+  .medium-text-1 {
+    font-weight: $font-weight-medium;
+  }
+
+  h5,
+  .medium-text-2,
+  h6,
+  .small-text-1,
+  h7,
+  .small-text-2 {
+    font-weight: $font-weight-semi-bold;
+  }
+
+  h1,
+  .large-text-1 {
+    font-size: 56px;
+    line-height: 110%;
+    letter-spacing: -1px;
+  }
+
+  h2,
+  .large-text-2 {
+    font-size: 42px;
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+
+  h3,
+  .large-text-3 {
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -1px;
+  }
+
+  h4,
+  .medium-text-1 {
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: -0.2px;
+  }
+
+  h5,
+  .medium-text-2 {
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  h6,
+  .small-text-1 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  h7,
+  .small-text-2 {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  //End Typography css
+
+  //colors
+  .bg-primary {
+    background-color: $primary-color !important;
+  }
+  .bg-primary-light {
+    background-color: $primary-light-color !important;
+  }
+  .bg-primary-dark {
+    background-color: $primary-dark-color !important;
+  }
+  .bg-secondary {
+    background-color: $secondary-color !important;
+  }
+  .bg-secondary-light {
+    background-color: $secondary-light-color !important;
+  }
+  .bg-secondary-lighter {
+    background-color: $secondary-lighter-color !important;
+  }
+  .bg-gray {
+    background-color: $gray-color !important;
+  }
+  .bg-gray-light {
+    background-color: $gray-light-color !important;
+  }
+  .bg-gray-lighter {
+    background-color: $gray-lighter-color !important;
+  }
+  .bg-gray-dark {
+    background-color: $gray-dark-color !important;
+  }
+  .bg-gray-darker {
+    background-color: $gray-darker-color !important;
+  }
+  .bg-warning {
+    background-color: $red-color !important;
+  }
+  .bg-white {
+    background-color: $white-color !important;
+  }
+  .bg-black {
+    background-color: $black-color !important;
+  }
+  .text-white {
+    color: #fff !important;
+  }
+  .text-black {
+    color: #222 !important;
+  }
+
+  // Button sizes
+  .btn {
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: 2px solid transparent;
+  }
+
+  .btn--huge {
+    padding: 22px 30px;
+    font-size: 17px;
+    font-weight: $font-weight-medium;
+    line-height: 22px;
+  }
+
+  .btn--large {
+    padding: 15px 22px;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    line-height: 117%;
+  }
+
+  .btn--mid {
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: $font-weight-medium;
+    line-height: 22px;
+  }
+
+  .btn--small {
+    padding: 5px 12px;
+    font-size: 13px;
+    font-weight: $font-weight-medium;
+    line-height: 22px;
+  }
+
+  .btn--wide {
+    padding: 14px 78px;
+    font-weight: $font-weight-medium;
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .btn--fluid {
+    width: 100%;
+  }
+
+  /* Green Button */
+  .btn--primary--green {
+    background-color: $primary-dark-color;
+    color: $white-color;
+    border: 1px solid transparent;
+    outline-color: transparent;
+
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        $primary-dark-color;
+      border-color: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        $primary-dark-color;
+    }
+
+    &:active {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        $primary-dark-color;
+    }
+
+    &:focus {
+      background: $primary-dark-color;
+      outline-color: $secondary-lighter-color;
+      border: 1px solid $white-color;
+      box-shadow: 0 0 0 2px $primary-dark-color;
+    }
+  }
+
+  .btn--primary--green--disabled {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      $gray-color;
+    color: $gray-light-color;
+  }
+
+  /* Blue Button */
+  .btn--primary {
+    background-color: $secondary-light-color;
+    color: $white-color;
+    border: 1px solid transparent;
+    outline-color: transparent;
+
+    &:hover {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        $secondary-light-color;
+      border-color: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3),
+          rgba(255, 255, 255, 0.3)
+        ),
+        $secondary-light-color;
+    }
+
+    &:active {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        $secondary-light-color;
+    }
+
+    &:focus {
+      background: $secondary-light-color;
+      outline-color: $secondary-lighter-color;
+      border: 1px solid $white-color;
+      box-shadow: 0 0 0 2px $secondary-lighter-color;
+    }
+  }
+
+  .btn--primary--disabled {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      $gray-color;
+    color: $gray-light-color;
+  }
+
+  /* White Button */
+  .btn--secondary {
+    background-color: $white-color;
+    border: 1px solid $gray-light-color;
+    outline-color: transparent;
+    color: $gray-darker-color;
+
+    &:hover {
+      background: $white-color;
+      border: 1px solid $gray-dark-color;
+    }
+
+    &:active {
+      background: $gray-light-color;
+    }
+
+    &:focus {
+      background: $white-color;
+      outline-color: $secondary-lighter-color;
+      border: 1px solid $gray-light-color;
+      box-shadow: 0 0 0 2px $gray-light-color;
+    }
+  }
+
+  .btn--secondary--disabled {
+    background: $white-color;
+    color: $gray-color;
+    border: 1px solid $gray-color;
+  }
+
+  /* Variations */
+  .btn--icon-right {
+    span {
+      margin-left: 7px;
+      font-size: 20px;
+      vertical-align: top;
+    }
+  }
+
+  .btn--icon-left {
+    span {
+      margin-right: 7px;
+      font-size: 20px;
+      vertical-align: top;
+    }
+  }
+
+  // checkbox
+  input[type="checkbox"].form-check-input {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+
+    &::before {
+      content: "";
+      background: $white-color;
+      border-radius: 2px;
+      border: 2px solid $gray-light-color;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: -0.2em;
+      margin-right: 1em;
+      vertical-align: top;
+      text-align: center;
+      box-sizing: content-box;
+      margin-left: -2px;
+    }
+
+    &:checked {
+      &::before {
+        font-family: $material-icons-font-family;
+        background-color: $secondary-lighter-color;
+        border: 2px solid $secondary-lighter-color;
+        content: "\e876";
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 1px;
+        color: $white-color;
+      }
+    }
+
+    &:focus {
+      box-shadow: none !important;
+      &::before {
+        outline: none !important;
+        border-color: $secondary-lighter-color;
+      }
+    }
+
+    &:disabled {
+      &::before {
+        background: $gray-light-color;
+        border-color: $gray-light-color;
+        border: 2px solid $gray-light-color;
+      }
+    }
+  }
+
+  input[type="checkbox"].form--check--input--checked {
+    &::before {
+      font-family: $material-icons-font-family;
+      background-color: $secondary-lighter-color;
+      border: 2px solid $secondary-lighter-color;
+      content: "\e876";
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 1px;
+      color: $white-color;
+    }
+  }
+
+  input[type="checkbox"].form--check--input--disabled {
+    &::before {
+      background: $gray-light-color;
+      border-color: $gray-light-color;
+      border: 2px solid $gray-light-color;
+    }
+  }
+
+  input[type="checkbox"].form-check-input-minus {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+
+    &::before {
+      content: "";
+      background: $white-color;
+      border-radius: 2px;
+      border: 2px solid $gray-light-color;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: -0.2em;
+      margin-right: 1em;
+      vertical-align: top;
+      text-align: center;
+      box-sizing: content-box;
+    }
+
+    &:checked {
+      &::before {
+        font-family: $material-icons-font-family;
+        background-color: $secondary-lighter-color;
+        border: 2px solid $secondary-lighter-color;
+        content: "\e15b";
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 1px;
+        color: $white-color;
+      }
+    }
+
+    &:focus {
+      &::before {
+        outline: none;
+        border-color: $secondary-lighter-color;
+      }
+    }
+
+    &:disabled {
+      &::before {
+        background: $gray-light-color;
+        border-color: $gray-light-color;
+        border: 2px solid $gray-light-color;
+      }
+    }
+  }
+
+  input[type="checkbox"].form--check--input--minus--checked {
+    &::before {
+      font-family: $material-icons-font-family;
+      background-color: $secondary-lighter-color;
+      border: 2px solid $secondary-lighter-color;
+      content: "\e15b";
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 1px;
+      color: $white-color;
+    }
+  }
+
+  input[type="checkbox"].form--check--input--minus--disabled {
+    &::before {
+      background: $gray-light-color;
+      border-color: $gray-light-color;
+      border: 2px solid $gray-light-color;
+    }
+  }
+
+  .form-check-label {
+    font-size: 14px;
+    vertical-align: top;
+    color: $gray-darker-color;
+    line-height: 24px;
+    font-family: $main-font-family;
+    font-weight: $font-weight-regular;
+    margin-left: 10px;
+  }
+
+  //Text Input
+  .form--text--input {
+    display: block;
+    font-size: 14px;
+    font-weight: $font-weight-regular;
+    color: $gray-dark-color;
+    line-height: 20px;
+    border-radius: $border-radius;
+    border: 1px solid $gray-light-color;
+    padding: $input-padding-x $input-padding-y;
+    white-space: nowrap;
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      line-height: 160%;
+      color: $gray-color;
+    }
+    &:hover {
+      border: 1px solid $gray-color;
+    }
+    &:focus,
+    &:focus-visible {
+      border: 1px solid $secondary-lighter-color;
+      padding: calc($input-padding-x - 1px) calc($input-padding-y - 1px);
+      outline: 1px solid $secondary-lighter-color;
+    }
+
+    &:disabled,
+    &.form--text--input--disabled {
+      background: $gray-light-color;
+      color: $gray-dark-color;
+      &:hover {
+        border: 1px solid $gray-light-color;
+      }
+    }
+  }
+  /* Input Small size */
+  .form--text--input--small {
+    font-size: 12px;
+    line-height: 20px;
+    padding: $input-padding-x-sm $input-padding-y;
+    &:focus,
+    &:focus-visible {
+      padding: calc($input-padding-x-sm - 1px) calc($input-padding-y - 1px);
+    }
+  }
+
+  /* Input Large size */
+  .form--text--input--large {
+    font-size: 18px;
+    line-height: 20px;
+    padding: $input-padding-x-lg $input-padding-y;
+    &:focus,
+    &:focus-visible {
+      padding: calc($input-padding-x-lg - 1px) calc($input-padding-y - 1px);
+    }
+  }
+}

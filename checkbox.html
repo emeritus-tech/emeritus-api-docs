@@ -1,0 +1,136 @@
+<div class="page-title">
+    <h1> Checkbox </h1>
+    <hr />
+</div>
+
+<section class="section dashboard">
+    <p>Create consistent cross-browser and cross-device checkboxes with our completely rewritten checkbox component.</p>
+    <br>
+
+    <h2 class="heading-title">Checkbox without label</h2>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" aria-label="Default Checkbox">
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" aria-label="Active Checkbox" checked>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input" aria-label="Disabled Checkbox" disabled>
+        </div>
+        <div class="">
+            <input type="checkbox" class="form-check-input" aria-label="Disabled Active Checkbox" checked disabled>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; aria-label=&quot;Default Checkbox&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; aria-label=&quot;Active Checkbox&quot; checked&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; aria-label=&quot;Disabled Checkbox&quot; disabled&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; aria-label=&quot;Disabled Active Checkbox&quot; checked disabled&gt;
+</code></pre>
+    </div><br>
+
+
+
+    <h2 class="heading-title">Indeterminate Checkbox without label</h2>
+    <p>Checkboxes can utilize the Indeterminate class when manually set via JavaScript (there is no available HTML
+        attribute for specifying it).</p>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input-minus" aria-label="Minus Checkbox">
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input-minus" aria-label="Minus Active Checkbox" checked>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input-minus" aria-label="Minus Disabled Checkbox" disabled>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" class="form-check-input-minus" aria-label="Minus Disabled Checkbox" checked disabled>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre
+            class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Checkbox&quot;&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Active Checkbox&quot; checked&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Disabled Checkbox&quot; disabled&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Disabled Checkbox&quot; checked disabled&gt;</code></pre>
+    </div><br>
+
+    <h2 class="heading-title">Checkbox with label</h2>
+    <p>Checkboxes can utilize the Indeterminate class when manually set via JavaScript (there is no available HTML
+        attribute for specifying it).</p>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-1" class="form-check-input" aria-label="Checkbox"><label
+                class="form-check-label" for="checkbox-1">Default checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-2" class="form-check-input" aria-label="Checkbox" checked><label
+                class="form-check-label" for="checkbox-2">Active Checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-3" class="form-check-input" aria-label="Checkbox" disabled><label
+                class="form-check-label" for="checkbox-3">Disabled Checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-4" class="form-check-input" aria-label="Checkbox" checked
+                disabled><label class="form-check-label" for="checkbox-4">Disabled Active Checkbox</label>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre class="chroma"><code class="language-html" data-lang="html">&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-1&quot;&gt;Default checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-2&quot;&gt;Active Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-3&quot;&gt;Disabled Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-4&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked disabled&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-4&quot;&gt;Disabled Active Checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </div><br>
+
+    <h2 class="heading-title">Indeterminate Checkbox with label</h2>
+    <p>Checkboxes can utilize the Indeterminate class when manually set via JavaScript (there is no available HTML
+        attribute for specifying it).</p>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-5" class="form-check-input-minus" aria-label="Minus Checkbox"><label
+                class="form-check-label" for="checkbox-5">Minus Default Checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-6" class="form-check-input-minus" aria-label="Minus Checkbox"
+                checked><label class="form-check-label" for="checkbox-6">Minus Active Checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-7" class="form-check-input-minus" aria-label="Minus Checkbox"
+                disabled><label class="form-check-label" for="checkbox-7">Minus Disabled Checkbox</label>
+        </div>
+        <div class="mb-3">
+            <input type="checkbox" id="checkbox-8" class="form-check-input-minus" aria-label="Minus Checkbox" checked
+                disabled><label class="form-check-label" for="checkbox-8">Minus Active Disabled Checkbox</label>
+        </div>
+    </div>
+    <div class="highlight">
+        <pre class="chroma"><code class="language-html" data-lang="html">&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-5&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Checkbox&quot;&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-5&quot;&gt;Minus Default Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-6&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Checkbox&quot; checked&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-6&quot;&gt;Minus Active Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-7&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Checkbox&quot; disabled&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-7&quot;&gt;Minus Disabled Checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-8&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Minus Checkbox&quot; checked disabled&gt;&lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-8&quot;&gt;Minus Active Disabled Checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </div><br>
+</section>
+<script>hljs.highlightAll();</script>
