@@ -72,7 +72,8 @@ a:hover {
   height: 60px;
   background-color: #fff;
   padding-left: 20px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 .header .toggle-sidebar-btn {
   font-size: 32px;
@@ -176,7 +177,7 @@ a:hover {
 .sidebar-nav .nav-link span.icon-left {
   font-size: 22px;
   margin-right: 10px;
-  color: #00be6d;
+  color: #00824b;
 }
 
 .sidebar-nav .nav-link span.icon-right {
@@ -242,15 +243,16 @@ a:hover {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a:focus {
-  color: #00be6d;
+  color: #00824b;
 }
 
 .sidebar-nav .nav-content a.active {
-  color: #1F7EAD;
+  color: #00824b;
+  font-weight: 700;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #00be6d;
+  background-color: #00824b;
 }
 
 /*footer*/
@@ -307,11 +309,11 @@ a:hover {
     display: none;
   }
   #main,
-#footer {
+  #footer {
     margin-left: 270px;
   }
   .toggle-sidebar #main,
-.toggle-sidebar #footer {
+  .toggle-sidebar #footer {
     margin-left: 0;
   }
   .toggle-sidebar .sidebar {
@@ -326,7 +328,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #00be6d;
+  background: #00824b;
   width: 40px;
   height: 40px;
   border-radius: 20px;

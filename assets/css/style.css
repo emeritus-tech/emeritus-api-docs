@@ -6,12 +6,12 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #444444;
 }
 
 a {
-  color: #00BE6D;
+  color: #00be6d;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -1px;
 }
 /*--------------------------------------------------------------
@@ -34,7 +34,7 @@ h6 {
 --------------------------------------------------------------*/
 #main {
   margin-top: 60px;
-  padding:20px  30px;
+  padding: 20px 30px;
   transition: all 0.3s;
 }
 
@@ -55,10 +55,10 @@ h6 {
   font-size: 30px;
   margin-bottom: 0;
   font-weight: 900;
-  color: #0A2837;
+  color: #0a2837;
 }
-.pagetitle h1 span{
-  color: #11435C;
+.pagetitle h1 span {
+  color: #11435c;
   font-size: 36px;
   vertical-align: text-top;
 }
@@ -73,12 +73,12 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #00BE6D;
+  background: #00be6d;
   width: 40px;
   height: 40px;
   border-radius: 20px;
   transition: all 0.4s;
-  color:#e5e5e5;
+  color: #e5e5e5;
 }
 
 .back-to-top i {
@@ -88,7 +88,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #00824B;
+  background: #00824b;
   color: #fff;
 }
 
@@ -308,7 +308,7 @@ h6 {
 
 .accordion-flush .accordion-button:not(.collapsed) {
   box-shadow: none;
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .accordion-flush .accordion-body {
@@ -320,7 +320,7 @@ h6 {
 /* Breadcrumbs */
 .breadcrumb {
   font-size: 14px;
- 
+
   color: #899bbd;
 }
 
@@ -354,13 +354,13 @@ h6 {
 
 .nav-tabs-bordered .nav-link:hover,
 .nav-tabs-bordered .nav-link:focus {
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .nav-tabs-bordered .nav-link.active {
   background-color: #fff;
-  color: #00BE6D;
-  border-bottom: 2px solid #00BE6D;
+  color: #00be6d;
+  border-bottom: 2px solid #00be6d;
 }
 
 /*--------------------------------------------------------------
@@ -374,8 +374,8 @@ h6 {
   .logo {
     width: 190px;
   }
-  .toggle-sidebar-btn{
-     display: none; 
+  .toggle-sidebar-btn {
+    display: none;
   }
 }
 
@@ -388,7 +388,6 @@ h6 {
   font-size: 26px;
   font-weight: 900;
   color: #222;
- 
 }
 
 .header {
@@ -412,7 +411,7 @@ h6 {
 .header .search-bar {
   min-width: 360px;
   padding: 0 20px;
-  position:absolute;
+  position: absolute;
   right: 0;
 }
 
@@ -478,7 +477,7 @@ h6 {
   list-style: none;
 }
 
-.header-nav>ul {
+.header-nav > ul {
   margin: 0;
   padding: 0;
 }
@@ -626,9 +625,9 @@ h6 {
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
-  box-shadow: 0px 0px 20px rgb(1 41 112 / 10%); 
+  box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
   background-color: #fff;
-  border-right:1px dotted #e5e5e5;
+  border-right: 1px dotted #e5e5e5;
 }
 
 @media (max-width: 1199px) {
@@ -648,7 +647,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   #main,
   #footer {
     margin-left: 270px;
@@ -662,7 +660,6 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
   .toggle-sidebar #main,
   .toggle-sidebar #footer {
     margin-left: 0;
@@ -701,15 +698,15 @@ h6 {
   display: flex;
   align-items: center;
   font-weight: 400;
-  color: #00BE6D;
+  color: #00be6d;
   transition: 0.3;
-  background: #F8F8FA;
+  background: #f8f8fa;
   padding: 10px 15px;
   border-radius: 4px;
 }
 
 .sidebar-nav .nav-link span:last-child {
-float: right;
+  float: right;
 }
 
 .sidebar-nav .nav-link span {
@@ -718,13 +715,13 @@ float: right;
   color: #222;
 }
 .sidebar-nav .nav-link span.material-symbols-outlined {
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .sidebar-nav .nav-link span.icon-left {
   font-size: 22px;
   margin-right: 10px;
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .sidebar-nav .nav-link span.icon-right {
@@ -745,21 +742,21 @@ float: right;
 .sidebar-nav .nav-link.collapsed span.icon-left {
   font-size: 22px;
   margin-right: 10px;
-  color: #00BE6D;
+  color: #00be6d;
 }
 .sidebar-nav .nav-link.collapsed span.icon-right {
   font-size: 20px;
   margin-right: 10px;
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #00BE6D;
+  color: #00be6d;
   background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover span {
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -802,7 +799,7 @@ float: right;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #00BE6D;
+  background-color: #00be6d;
 }
 
 /*--------------------------------------------------------------
@@ -831,7 +828,7 @@ float: right;
 
 .dashboard .filter .icon:hover,
 .dashboard .filter .icon:focus {
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .dashboard .filter .dropdown-header {
@@ -875,7 +872,7 @@ float: right;
 }
 
 .dashboard .sales-card .card-icon {
-  color: #00BE6D;
+  color: #00be6d;
   background: #f6f6fe;
 }
 
@@ -937,7 +934,7 @@ float: right;
 }
 
 /* News & Updates */
-.dashboard .news .post-item+.post-item {
+.dashboard .news .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -960,7 +957,7 @@ float: right;
 }
 
 .dashboard .news h4 a:hover {
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .dashboard .news p {
@@ -1108,7 +1105,7 @@ float: right;
 .faq .basic h6 {
   font-size: 18px;
   font-weight: 600;
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .faq .basic p {
@@ -1125,7 +1122,7 @@ float: right;
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #00BE6D;
+  color: #00be6d;
 }
 
 .contact .info-box h3 {
@@ -1193,7 +1190,7 @@ float: right;
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #00BE6D;
+  border-color: #00be6d;
 }
 
 .contact .php-email-form input {
@@ -1204,8 +1201,8 @@ float: right;
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #00BE6D;
+.contact .php-email-form button[type="submit"] {
+  background: #00be6d;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1213,7 +1210,7 @@ float: right;
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -1247,7 +1244,7 @@ float: right;
 .error-404 h1 {
   font-size: 180px;
   font-weight: 700;
-  color: #00BE6D;
+  color: #00be6d;
   margin-bottom: 0;
   line-height: 150px;
 }
@@ -1283,7 +1280,7 @@ float: right;
   font-size: 14px;
   transition: all 0.3s;
   border-top: 1px solid #e5e5e5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer .copyright {
