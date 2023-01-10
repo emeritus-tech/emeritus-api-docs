@@ -1,0 +1,172 @@
+<div class="page-title">
+    <h1>Radio</h1>
+    <hr />
+</div>
+
+<section class="section dashboard">
+    <p>
+        Create consistent cross-browser and cross-device radio buttons with our
+        completely rewritten radio component.
+    </p>
+    <br />
+
+    <h2 class="heading-title">Radio without label</h2>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-1" /><label
+                    class="form-radio-label form-label-sm" for="radio-1"></label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-2" checked="" /><label
+                    class="form-radio-label form-label-sm" for="radio-2"></label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-3"
+                    disabled="" /><label class="form-radio-label form-label-sm" for="radio-3"></label>
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#radio1')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="radio1">&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-1&quot;&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-1&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-2&quot; checked&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-2&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-3&quot; disabled&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-3&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+    <br />
+
+    <h2 class="heading-title">Radio with label</h2>
+
+    <div class="bd-example">
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-4" /><label
+                    class="form-radio-label form-label-sm" for="radio-4">Radio Button With Label</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-14"
+                    checked="" /><label class="form-radio-label form-label-sm" for="radio-14">Active Radio Button With
+                    Label</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Default Radio" id="radio-24" disabled /><label
+                    class="form-radio-label form-label-sm" for="radio-24">Disabled Radio Button With Label</label>
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#radio2')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="radio2">&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-4&quot;&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-4&quot;&gt;Radio Button With Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-14&quot; checked&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-14&quot;&gt;Active Radio Button With Label&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Default Radio&quot; id=&quot;radio-24&quot; disabled&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-24&quot;&gt;Disabled Radio Button With Label&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+    <br />
+
+    <h2 class="heading-title">Radio Group</h2>
+    <p>Toggle buttons can be grouped in a button group if needed.</p>
+
+    <div class="bd-example">
+        <div>
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Option 1" id="radio-5" name="radiogroup"
+                    checked="" /><label class="form-radio-label form-label-sm" for="radio-5">Option 1</label>
+            </div>
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Option 2" id="radio-6"
+                    name="radiogroup" /><label class="form-radio-label form-label-sm" for="radio-6">Option 2</label>
+            </div>
+            <div class="form-radio-label-row">
+                <input type="radio" class="form-radio-input" aria-label="Option 3" id="radio-7"
+                    name="radiogroup" /><label class="form-radio-label form-label-sm" for="radio-7">Option 3</label>
+            </div>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#radio3')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="radio3">&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Option 1&quot; id=&quot;radio-5&quot; name=&quot;radiogroup&quot; checked&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-5&quot;&gt;Option 1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Option 2&quot; id=&quot;radio-6&quot; name=&quot;radiogroup&quot;&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-6&quot;&gt;Option 2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-radio-label-row&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-input&quot; aria-label=&quot;Option 3&quot; id=&quot;radio-7&quot; name=&quot;radiogroup&quot;&gt;
+    &lt;label class=&quot;form-radio-label form-label-sm&quot; for=&quot;radio-7&quot;&gt;Option 3&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+    <br />
+
+    <h2 class="heading-title">Radio Toggle buttons</h2>
+    <p>Toggle buttons can be grouped in a button group if needed.</p>
+
+    <div class="bd-example">
+        <div class="radio-group">
+            <input type="radio" class="form-radio-btn" aria-label="Yes" id="radio-11" name="radio" checked="" /><label
+                class="form-radio-btn-label form-label-sm" for="radio-11">Yes</label><input type="radio"
+                class="form-radio-btn" aria-label="No" id="radio-12" name="radio" /><label
+                class="form-radio-btn-label form-label-sm" for="radio-12">No</label>
+        </div>
+    </div>
+    <div class="highlight">
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#radio4')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="radio4">&lt;div class=&quot;radio-group&quot;&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-btn&quot; aria-label=&quot;Yes&quot; id=&quot;radio-11&quot; name=&quot;radio&quot; checked=&quot;&quot;&gt;
+    &lt;label class=&quot;form-radio-btn-label form-label-sm&quot; for=&quot;radio-11&quot;&gt;Yes&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; class=&quot;form-radio-btn&quot; aria-label=&quot;No&quot; id=&quot;radio-12&quot; name=&quot;radio&quot;&gt;
+    &lt;label class=&quot;form-radio-btn-label form-label-sm&quot; for=&quot;radio-12&quot;&gt;No&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+    <br />
+</section>
+<script>
+    hljs.highlightAll();
+</script>

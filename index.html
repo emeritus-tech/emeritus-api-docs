@@ -35,6 +35,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
+    font-feature-settings: "liga";
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased
   }
@@ -44,8 +45,10 @@
 <link href="assets/css/pagestyles.min.css" rel="stylesheet" />
 <link href="assets/css/bootstrap-select.min.css" rel="stylesheet" />
 <link href="assets/css//highlight.min.css" rel="stylesheet" />
+
 <!--School css-->
 <link href="institution_assets/css/emeritus.min.css" rel="stylesheet" id="school-theme" />
+
 
 </head>
 
@@ -99,6 +102,14 @@
             <a href="color.html" class="csp">
               Color </a>
           </li>
+          <li>
+            <a href="header.html" class="csp">
+              Header </a>
+          </li>
+          <li>
+            <a href="footer.html" class="csp">
+              Footer </a>
+          </li>
         </ul>
       </li>
       <li class="nav-item">
@@ -108,12 +119,22 @@
         </div>
         <ul id="content-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
           <li>
+            <a href="iconography.html" class="csp">
+              Iconography </a>
+          </li>
+
+          <li>
             <a href="typography.html" class="csp">
               Typography </a>
           </li>
+
           <li>
             <a href="label.html" class="csp">
               Labels </a>
+          </li>
+          <li>
+            <a href="links.html" class="csp">
+              Links </a>
           </li>
           <li>
             <a href="paragraphs.html" class="csp">
@@ -130,6 +151,10 @@
           <li>
             <a href="checkbox.html" class="csp">
               Checkbox </a>
+          </li>
+          <li>
+            <a href="radio.html" class="csp">
+              Radio </a>
           </li>
           <li>
             <a href="input.html" class="csp">
@@ -154,6 +179,10 @@
           <li>
             <a href="pagination.html" class="csp">
               Pagination </a>
+          </li>
+          <li>
+            <a href="loader.html" class="csp">
+              Loader </a>
           </li>
         </ul>
       </li>
@@ -216,13 +245,28 @@
       <p>Project blueprint - defining the Emeritus design standards, We'll need to follow a few steps to get the build
         process set up in our environment.</p><br>
       <p>1. Let’s run the following commands to clone the application locally:<br>
-      <pre><code class="language-html" data-lang="html" style="padding-left: 20px;">git clone https://github.com/emeritus-tech/blueprint.git</code></pre>
+      <div class="highlight">
+        <div class="bd-clipboard">
+          <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#home1')">
+            <span class="material-symbols-outlined"> content_copy </span>
+          </button>
+        </div>
+        <pre><code class="language-html" data-lang="html" style="padding-left: 20px;" id="home1">git clone https://github.com/emeritus-tech/blueprint.git</code></pre>
+      </div>
+
       </p>
 
       <p>2. Take a look in your file system, and you will see a new directory named 'blueprint' after the cloned
         project.</p>
       <p>3. To build this project, you need to have the following package installed:<br>
-      <pre><code class="language-html" data-lang="html" style="padding-left: 20px;">yarn</code></pre>
+      <div class="highlight">
+        <div class="bd-clipboard">
+          <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#home2')">
+            <span class="material-symbols-outlined"> content_copy </span>
+          </button>
+        </div>
+        <pre><code class="language-html" data-lang="html" style="padding-left: 20px;" id="home2">yarn</code></pre>
+      </div>
       </p>
       <p>4. The command above will make the following changes to your local environment:</p>
       <ul>
@@ -231,7 +275,14 @@
         <li>Add the default Storybook configuration.</li>
       </ul>
       <p>5. Depending on your framework, first, build your app and then check that everything worked by running:<br>
-      <pre><code class="language-html" data-lang="html" style="padding-left: 20px;">yarn storybook</code></pre>
+      <div class="highlight">
+        <div class="bd-clipboard">
+          <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#home3')">
+            <span class="material-symbols-outlined"> content_copy </span>
+          </button>
+        </div>
+        <pre><code class="language-html" data-lang="html" style="padding-left: 20px;" id="home3">yarn storybook</code></pre>
+      </div>
       </p>
       <p>6. It will start Storybook locally and output the address. it will automatically open the address in a new
         browser tab, and you'll be greeted by a welcome screen.</p>

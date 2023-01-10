@@ -14,34 +14,39 @@ $font-weight-semi-bold: 600 !default;
 $font-weight-bold: 700 !default;
 
 //----------------------------------
-// COLORS
+// COLOR CODES
 //----------------------------------
-$primary-color: #A31F34;
-$primary-light-color: #3DBDBF;
-$primary-dark-color: #A31F34;
+$primary-color: #a31f34;
+$primary-dark-color: #a31f34;
+$primary-alpha-dark-color: #a31f34;
+$primary-light-color: #a31f34;
+$primary-alpha-light-color: #a31f34;
+$primary-alpha-lighter-color: #a31f34;
 
-$secondary-color: #F1BA46;
-$secondary-light-color: #F1BA46;
-$secondary-lighter-color: #F1BA46;
+$secondary-color: #3dbdbf;
+$secondary-light-color: #3dbdbf;
+$secondary-lighter-color: #3dbdbf;
+$secondary-alpha-dark-color: #355b6b;
+$secondary-alpha-light-color: #3dbdbf;
+$secondary-alpha-lighter-color: #3dbdbf;
 
 $gray-color: #b1bac2;
-$gray-light-color: #C2C0BF;
+$gray-light-color: #c2c0bf;
 $gray-lighter-color: #f8f8fa;
-$gray-dark-color: #444444;
-$gray-darker-color: #222222;
+$gray-dark-color: #8a8b8c;
+$gray-darker-color: #000;
+$gray-alpha-dark-color: rgba(0, 0, 0, 0.05);
 
-$red-color: #A31F34;
+$red-color: #d54308;
 $white-color: #fff;
 $black-color: #000;
 
 //----------------------------------
 //BORDER RADIUS
 //----------------------------------
-
 $border-radius: 0.25rem !default;
 $border-radius-lg: 0.3 !default;
 $border-radius-sm: 0.5rem !default;
-
 $rounded-pill: 10rem !default;
 
 //----------------------------------
@@ -58,17 +63,21 @@ $input-padding-x-lg: 0.75rem;
     background-color: #000;
     border-radius: 6px;
   }
+
   pre {
     margin-bottom: 0;
   }
+
   .bd-example {
     padding: 20px 0;
     background-color: #fff;
   }
 
-  //Typography css
+  // ----------------------------------
+  // TYPOGRAPHY
+  // ----------------------------------
 
-  /* WEIGHTS */
+  /* Font Weights */
   .text-weight-regular {
     font-weight: $font-weight-regular;
   }
@@ -85,6 +94,9 @@ $input-padding-x-lg: 0.75rem;
     font-weight: $font-weight-bold;
   }
 
+  // ----------------------------------
+  // HEADINGS
+  // ----------------------------------
   h1,
   .large-text-1,
   h2,
@@ -151,61 +163,199 @@ $input-padding-x-lg: 0.75rem;
     line-height: 140%;
   }
 
-  //End Typography css
-
-  //colors
-  .bg-primary {
-    background-color: $primary-color !important;
-  }
-  .bg-primary-light {
-    background-color: $primary-light-color !important;
-  }
-  .bg-primary-dark {
-    background-color: $primary-dark-color !important;
-  }
-  .bg-secondary {
-    background-color: $secondary-color !important;
-  }
-  .bg-secondary-light {
-    background-color: $secondary-light-color !important;
-  }
-  .bg-secondary-lighter {
-    background-color: $secondary-lighter-color !important;
-  }
-  .bg-gray {
-    background-color: $gray-color !important;
-  }
-  .bg-gray-light {
-    background-color: $gray-light-color !important;
-  }
-  .bg-gray-lighter {
-    background-color: $gray-lighter-color !important;
-  }
-  .bg-gray-dark {
-    background-color: $gray-dark-color !important;
-  }
-  .bg-gray-darker {
-    background-color: $gray-darker-color !important;
-  }
-  .bg-warning {
-    background-color: $red-color !important;
-  }
-  .bg-white {
-    background-color: $white-color !important;
-  }
-  .bg-black {
-    background-color: $black-color !important;
-  }
-  .text-white {
-    color: #fff !important;
-  }
-  .text-black {
-    color: #222 !important;
+  // ----------------------------------
+  // PARAGRAPHS
+  // ----------------------------------
+  .para--one,
+  .para--two,
+  .para--three,
+  .para--four {
+    font-weight: $font-weight-regular;
   }
 
-  // Button sizes
+  .para--one {
+    font-size: 18px;
+    line-height: 155%;
+    color: $gray-dark-color;
+  }
+
+  .para--two,
+  .para--three,
+  .form-label-lg {
+    color: $gray-darker-color;
+  }
+
+  .para--two {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  .para--three {
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .para--four {
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  // ----------------------------------
+  // LABEL
+  // ----------------------------------
+  .form-label-lg,
+  .form-label-md,
+  .form-label-sm {
+    font-weight: $font-weight-medium;
+    line-height: 140%;
+  }
+
+  .form-label-lg {
+    font-size: 18px;
+  }
+
+  .form-label-md {
+    font-size: 16px;
+  }
+
+  .form-label-sm {
+    font-size: 14px;
+  }
+
+  // ----------------------------------
+  // COLORS CLASSES
+  // ----------------------------------
+  /* Primary Colors */
+  .primary-background-color {
+    background-color: $primary-color;
+  }
+  .primary-light-background-color {
+    background-color: $primary-light-color;
+  }
+  .primary-dark-background-color {
+    background-color: $primary-dark-color;
+  }
+  .primary-alpha-light-background-color {
+    background-color: $primary-alpha-light-color;
+  }
+  .primary-alpha-lighter-background-color {
+    background-color: $primary-alpha-lighter-color;
+  }
+  .primary-alpha-dark-background-color {
+    background-color: $primary-alpha-dark-color;
+  }
+
+  .primary-color {
+    color: $primary-color;
+  }
+  .primary-light-color {
+    color: $primary-light-color;
+  }
+  .primary-dark-color {
+    color: $primary-dark-color;
+  }
+  .primary-alpha-light-color {
+    color: $primary-alpha-light-color;
+  }
+  .primary-alpha-lighter-color {
+    color: $primary-alpha-lighter-color;
+  }
+  .primary-alpha-dark-color {
+    color: $primary-alpha-dark-color;
+  }
+
+  /* Secondary Colors */
+  .secondary-background-color {
+    background-color: $secondary-color;
+  }
+  .secondary-light-background-color {
+    background-color: $secondary-light-color;
+  }
+  .secondary-lighter-background-color {
+    background-color: $secondary-lighter-color;
+  }
+  .secondary-alpha-light-background-color {
+    background-color: $secondary-alpha-light-color;
+  }
+  .secondary-alpha-lighter-background-color {
+    background-color: $secondary-alpha-lighter-color;
+  }
+  .secondary-alpha-dark-background-color {
+    background-color: $secondary-alpha-dark-color;
+  }
+
+  .secondary-color {
+    color: $secondary-color;
+  }
+  .secondary-light-color {
+    color: $secondary-light-color;
+  }
+  .secondary-lighter-color {
+    color: $secondary-lighter-color;
+  }
+  .secondary-alpha-light-color {
+    color: $secondary-alpha-light-color;
+  }
+  .secondary-alpha-lighter-color {
+    color: $secondary-alpha-lighter-color;
+  }
+  .secondary-alpha-dark-color {
+    color: $secondary-alpha-dark-color;
+  }
+
+  /* Gray Colors */
+  .gray-background-color {
+    background-color: $gray-color;
+  }
+  .gray-light-background-color {
+    background-color: $gray-light-color;
+  }
+  .gray-lighter-background-color {
+    background-color: $gray-lighter-color;
+  }
+  .gray-dark-background-color {
+    background-color: $gray-dark-color;
+  }
+  .gray-darker-background-color {
+    background-color: $gray-darker-color;
+  }
+  .gray-alpha-dark-background-color {
+    background-color: $gray-alpha-dark-color;
+  }
+
+  .gray-color {
+    color: $gray-color;
+  }
+  .gray-light-color {
+    color: $gray-light-color;
+  }
+  .gray-lighter-color {
+    color: $gray-lighter-color;
+  }
+  .gray-dark-color {
+    color: $gray-dark-color;
+  }
+  .gray-darker-color {
+    color: $gray-darker-color;
+  }
+  .gray-alpha-dark-color {
+    color: $gray-alpha-dark-color;
+  }
+
+  /* Warning Colors */
+  .red-color {
+    color: $red-color;
+  }
+
+  .red-background-color {
+    background-color: $red-color;
+  }
+
+  // ----------------------------------
+  // Buttons
+  // ----------------------------------
   .btn {
-    border-radius: 4px;
+    border-radius: $border-radius;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -252,30 +402,19 @@ $input-padding-x-lg: 0.75rem;
   }
 
   /* Green Button */
-  .btn--primary--green {
+  .btn--primary {
     background-color: $primary-dark-color;
     color: $white-color;
     border: 1px solid transparent;
     outline-color: transparent;
 
     &:hover {
-      background: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.3),
-          rgba(255, 255, 255, 0.3)
-        ),
-        $primary-dark-color;
-      border-color: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.3),
-          rgba(255, 255, 255, 0.3)
-        ),
-        $primary-dark-color;
+      background: $primary-alpha-dark-color;
+      border-color: $primary-alpha-dark-color;
     }
 
     &:active {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        $primary-dark-color;
+      background: $primary-alpha-light-color;
     }
 
     &:focus {
@@ -284,43 +423,28 @@ $input-padding-x-lg: 0.75rem;
       border: 1px solid $white-color;
       box-shadow: 0 0 0 2px $primary-dark-color;
     }
-  }
 
-  .btn--primary--green--disabled {
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      ),
-      $gray-color;
-    color: $gray-light-color;
+    &:disabled {
+      background: $gray-color;
+      color: $gray-light-color;
+      cursor: default;
+    }
   }
 
   /* Blue Button */
-  .btn--primary {
+  .btn--secondary {
     background-color: $secondary-light-color;
     color: $white-color;
     border: 1px solid transparent;
     outline-color: transparent;
 
     &:hover {
-      background: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.3),
-          rgba(255, 255, 255, 0.3)
-        ),
-        $secondary-light-color;
-      border-color: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.3),
-          rgba(255, 255, 255, 0.3)
-        ),
-        $secondary-light-color;
+      background: $secondary-alpha-dark-color;
+      border-color: $secondary-alpha-dark-color;
     }
 
     &:active {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        $secondary-light-color;
+      background: $secondary-alpha-light-color;
     }
 
     &:focus {
@@ -329,32 +453,30 @@ $input-padding-x-lg: 0.75rem;
       border: 1px solid $white-color;
       box-shadow: 0 0 0 2px $secondary-lighter-color;
     }
-  }
 
-  .btn--primary--disabled {
-    background: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.3),
-        rgba(255, 255, 255, 0.3)
-      ),
-      $gray-color;
-    color: $gray-light-color;
+    &:disabled {
+      background: $gray-color;
+      color: $gray-light-color;
+      cursor: default;
+    }
   }
 
   /* White Button */
-  .btn--secondary {
+  .btn--white {
     background-color: $white-color;
     border: 1px solid $gray-light-color;
     outline-color: transparent;
     color: $gray-darker-color;
 
     &:hover {
-      background: $white-color;
-      border: 1px solid $gray-dark-color;
+      background: $gray-light-color;
+      border: 1px solid $gray-light-color;
     }
 
     &:active {
       background: $gray-light-color;
+      border: 1px solid $gray-dark-color;
+      color: $gray-darker-color;
     }
 
     &:focus {
@@ -363,12 +485,13 @@ $input-padding-x-lg: 0.75rem;
       border: 1px solid $gray-light-color;
       box-shadow: 0 0 0 2px $gray-light-color;
     }
-  }
 
-  .btn--secondary--disabled {
-    background: $white-color;
-    color: $gray-color;
-    border: 1px solid $gray-color;
+    &:disabled {
+      background: $white-color;
+      color: $gray-color;
+      border: 1px solid $gray-light-color;
+      cursor: default;
+    }
   }
 
   /* Variations */
@@ -388,7 +511,9 @@ $input-padding-x-lg: 0.75rem;
     }
   }
 
-  // checkbox
+  // ----------------------------------
+  // CHECKBOX
+  // ----------------------------------
   input[type="checkbox"].form-check-input {
     width: 20px;
     height: 20px;
@@ -426,6 +551,7 @@ $input-padding-x-lg: 0.75rem;
 
     &:focus {
       box-shadow: none !important;
+
       &::before {
         outline: none !important;
         border-color: $secondary-lighter-color;
@@ -438,27 +564,6 @@ $input-padding-x-lg: 0.75rem;
         border-color: $gray-light-color;
         border: 2px solid $gray-light-color;
       }
-    }
-  }
-
-  input[type="checkbox"].form--check--input--checked {
-    &::before {
-      font-family: $material-icons-font-family;
-      background-color: $secondary-lighter-color;
-      border: 2px solid $secondary-lighter-color;
-      content: "\e876";
-      font-size: 20px;
-      line-height: 20px;
-      margin-top: 1px;
-      color: $white-color;
-    }
-  }
-
-  input[type="checkbox"].form--check--input--disabled {
-    &::before {
-      background: $gray-light-color;
-      border-color: $gray-light-color;
-      border: 2px solid $gray-light-color;
     }
   }
 
@@ -512,27 +617,6 @@ $input-padding-x-lg: 0.75rem;
     }
   }
 
-  input[type="checkbox"].form--check--input--minus--checked {
-    &::before {
-      font-family: $material-icons-font-family;
-      background-color: $secondary-lighter-color;
-      border: 2px solid $secondary-lighter-color;
-      content: "\e15b";
-      font-size: 20px;
-      line-height: 20px;
-      margin-top: 1px;
-      color: $white-color;
-    }
-  }
-
-  input[type="checkbox"].form--check--input--minus--disabled {
-    &::before {
-      background: $gray-light-color;
-      border-color: $gray-light-color;
-      border: 2px solid $gray-light-color;
-    }
-  }
-
   .form-check-label {
     font-size: 14px;
     vertical-align: top;
@@ -543,7 +627,10 @@ $input-padding-x-lg: 0.75rem;
     margin-left: 10px;
   }
 
-  //Text Input
+  // ----------------------------------
+  // TEXT INPUT
+  // ----------------------------------
+  /* Input Medium size */
   .form--text--input {
     display: block;
     font-size: 14px;
@@ -554,36 +641,35 @@ $input-padding-x-lg: 0.75rem;
     border: 1px solid $gray-light-color;
     padding: $input-padding-x $input-padding-y;
     white-space: nowrap;
-    &::placeholder,
-    &:-ms-input-placeholder,
-    &::-ms-input-placeholder {
-      line-height: 160%;
-      color: $gray-color;
-    }
+
     &:hover {
       border: 1px solid $gray-color;
     }
+
     &:focus,
     &:focus-visible {
-      border: 1px solid $secondary-lighter-color;
+      border: 2px solid $secondary-lighter-color;
       padding: calc($input-padding-x - 1px) calc($input-padding-y - 1px);
-      outline: 1px solid $secondary-lighter-color;
+      outline: none;
     }
 
     &:disabled,
     &.form--text--input--disabled {
       background: $gray-light-color;
       color: $gray-dark-color;
+
       &:hover {
         border: 1px solid $gray-light-color;
       }
     }
   }
+
   /* Input Small size */
   .form--text--input--small {
     font-size: 12px;
     line-height: 20px;
     padding: $input-padding-x-sm $input-padding-y;
+
     &:focus,
     &:focus-visible {
       padding: calc($input-padding-x-sm - 1px) calc($input-padding-y - 1px);
@@ -595,9 +681,495 @@ $input-padding-x-lg: 0.75rem;
     font-size: 18px;
     line-height: 20px;
     padding: $input-padding-x-lg $input-padding-y;
+
     &:focus,
     &:focus-visible {
       padding: calc($input-padding-x-lg - 1px) calc($input-padding-y - 1px);
+    }
+  }
+
+  // ----------------------------------
+  // Search Input
+  // ----------------------------------
+  .form--search--input-parent {
+    .search-icon {
+      top: 180%;
+      transform: translateY(-180%);
+      font-size: 16px;
+      padding-left: $input-padding-y;
+    }
+
+    .form--text--input {
+      padding-left: calc($input-padding-y + 24px);
+
+      &:focus,
+      &:focus-visible {
+        padding-left: calc($input-padding-y + 24px - 1px);
+      }
+    }
+
+    .form--text--input--small {
+      & ~ .search-icon {
+        font-size: 14px;
+      }
+    }
+
+    .form--text--input--large {
+      & ~ .search-icon {
+        font-size: 18px;
+      }
+    }
+  }
+
+  // ----------------------------------
+  // ACCORDION
+  // ----------------------------------
+  .accordion {
+    width: 100%;
+
+    input[type="checkbox"].accordion__tab--checkbox {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  .accordion__tab {
+    width: 100%;
+    background-color: $white-color;
+    color: $gray-darker-color;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+
+    &:first-child {
+      border-top: 1px solid $gray-light-color;
+    }
+
+    &--label {
+      display: flex;
+      cursor: pointer;
+      padding: 15px 7px;
+      text-align: left;
+      font-size: 16px;
+      font-weight: $font-weight-semi-bold;
+      color: $gray-darker-color;
+      width: 95%;
+
+      &:hover {
+        background-color: $white-color;
+      }
+
+      &::after {
+        font-family: $material-icons-font-family;
+        content: "\e5cf";
+        font-size: 22px;
+        text-align: center;
+        transition: 0.4s;
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 7px;
+      }
+    }
+
+    .btn__clear {
+      margin-left: 10px;
+      font-size: 14px;
+      font-weight: $font-weight-regular;
+      text-decoration: underline;
+      color: $black-color;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .accordion__btn-pill {
+      float: right;
+      color: $secondary-lighter-color;
+      background-color: $gray-lighter-color;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      border: 1px solid $gray-light-color;
+      position: absolute;
+      right: 40px;
+      top: 12px;
+    }
+
+    &--content {
+      max-height: 0;
+      border-bottom: 1px solid $gray-light-color;
+      overflow: hidden;
+      padding: 0 7px;
+      transition: 0.4s;
+      font-size: 14px;
+
+      .show__more {
+        font-size: 14px;
+        font-weight: $font-weight-regular;
+        text-decoration: underline;
+        color: $black-color;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      ul.list--checkbox {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          padding-bottom: 7px;
+        }
+      }
+
+      a {
+        color: $gray-darker-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  input:checked {
+    + .accordion__tab--label {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+
+    ~ .accordion__tab--content {
+      max-height: 100vh;
+      transition: 0.4s;
+    }
+  }
+
+  // ----------------------------------
+  // PAGINATION
+  // ----------------------------------
+  .pagination--nav {
+    .pagination {
+      padding-left: 0;
+      list-style: none;
+      margin: 0;
+
+      .page--item {
+        &:not(:first-child, :last-child, .page--item--parent) {
+          margin: 0 6px;
+        }
+
+        .page--link {
+          border-radius: $border-radius;
+          line-height: normal;
+          background-color: $white-color;
+          position: relative;
+          min-width: 42px;
+          min-height: 42px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          font-weight: $font-weight-medium;
+          font-size: 16px;
+          color: $gray-darker-color;
+
+          &:not(.page--link--dots) {
+            border: 1px solid $gray-light-color;
+
+            &:hover {
+              background-color: $gray-light-color;
+              border: 1px solid $gray-light-color;
+            }
+          }
+
+          &.chevron--left::after,
+          &.chevron--right::after {
+            font-family: $material-icons-font-family;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+          }
+
+          &.chevron--left::after {
+            content: "\e5cb";
+          }
+
+          &.chevron--right::after {
+            content: "\e5cc";
+          }
+        }
+
+        &.disabled {
+          .page--link {
+            color: $gray-color;
+            pointer-events: none;
+            cursor: auto;
+          }
+        }
+
+        &.active {
+          .page--link {
+            background: $gray-light-color;
+            border: 1px solid $gray-dark-color;
+            font-weight: $font-weight-bold;
+
+            &:hover {
+              background: $gray-light-color;
+              border: 1px solid $gray-dark-color;
+            }
+          }
+        }
+      }
+      &.pagination--small {
+        .page--item {
+          .page--link {
+            min-width: 32px;
+            min-height: 32px;
+            font-weight: $font-weight-bold;
+            font-size: 14px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+
+  // ----------------------------------
+  // PILLS
+  // ----------------------------------
+  button.chip {
+    text-rendering: auto;
+    color: inherit;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-shadow: none;
+    text-align: inherit;
+    align-items: inherit;
+    cursor: pointer;
+    box-sizing: inherit;
+    background-color: inherit;
+    padding: inherit;
+    border-width: inherit;
+    border-style: inherit;
+    border-color: inherit;
+    border-image: inherit;
+    position: relative;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  .chip {
+    .chip__value {
+      font-weight: $font-weight-regular;
+      font-size: 14px;
+      line-height: 1;
+      padding: 8px 12px;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: $border-radius;
+    }
+
+    .chip__icon--before {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 6px 7px 6px 7px;
+      font-size: 20px;
+      left: 0;
+      margin-top: 1px;
+      border-radius: $border-radius 0 0 $border-radius;
+
+      & + .chip__value {
+        margin-left: 30px;
+        border-radius: 0 $border-radius $border-radius 0;
+      }
+    }
+
+    .chip__icon--after {
+      border-radius: 0 $border-radius $border-radius 0;
+      padding: 5px;
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+      line-height: 20px;
+      padding: 6px 7px 6px 7px;
+      margin-top: -6px;
+
+      & + .chip__value {
+        border-radius: $border-radius 0 0 $border-radius;
+      }
+    }
+  }
+
+  // ----------------------------------
+  // LOADER
+  // ----------------------------------
+  .loader {
+    position: relative;
+    //position: fixed;
+    z-index: 999;
+    height: 40px;
+    width: 40px;
+    overflow: visible;
+    //margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      display: block;
+      //position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //background: rgba(0, 0, 0, 0.05);
+    }
+    &.loader--circle {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        border-radius: 50px;
+        border: 4px solid transparent;
+        border-top-color: $primary-color;
+        -webkit-animation: spin 0.6s linear infinite;
+        animation: spin 0.6s linear infinite;
+      }
+    }
+  }
+  @-webkit-keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      tranform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      tranform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      -webkit-transform: rotate(0deg);
+      tranform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      tranform: rotate(360deg);
+    }
+  }
+
+  // ----------------------------------
+  // RADIO
+  // ----------------------------------
+  input[type="radio"].form-radio-input {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+
+    &::before {
+      content: "";
+      background: $white-color;
+      border-radius: 50%;
+      border: 2px solid $gray-color;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      position: relative;
+      top: -1px;
+      margin-left: -1px;
+      vertical-align: top;
+      text-align: center;
+      box-sizing: content-box;
+    }
+
+    &:checked {
+      &::before {
+        background-color: $secondary-lighter-color;
+        border: 2px solid $secondary-lighter-color;
+        box-shadow: inset 0 0 0 3px $white-color;
+      }
+    }
+
+    &:focus {
+      &::before {
+        outline: none;
+        border-color: $secondary-lighter-color;
+      }
+    }
+
+    &:disabled {
+      &::before {
+        background-color: $gray-lighter-color;
+        border: 2px solid $gray-light-color;
+      }
+    }
+  }
+
+  .form-radio-label {
+    vertical-align: top;
+    line-height: 24px;
+    margin-left: 7px;
+  }
+
+  /* Radio Button Group */
+  .radio-group {
+    display: flex;
+    width: 150px;
+
+    input[type="radio"].form-radio-btn {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+
+      &:hover:not(:checked) + label {
+        border: 1px solid $gray-color;
+      }
+
+      &:checked + label {
+        padding: 12px 26px;
+        border: 1px solid $secondary-light-color;
+        background-color: $secondary-alpha-lighter-color;
+        color: $gray-darker-color;
+        margin-right: 5px;
+      }
+    }
+    .form-radio-btn-label {
+      display: flex;
+      flex: auto;
+      vertical-align: middle;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid $gray-light-color;
+      background-color: $white-color;
+      color: $gray-darker-color;
+      padding: 12px 26px;
+      border-radius: 6px;
+      transition: color --transition-fast ease-out,
+        background-color --transition-fast ease-in;
+      user-select: none;
+      margin-right: 5px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -129,8 +129,12 @@ $(document).ready(function () {
     $(".sidebar-nav .nav-content a").removeClass("active");
     $(".sidebar-nav .nav-link").removeClass("collapsed");
     $(this).addClass("active");
-    $(this).parent().parent().parent().children("div.nav-link").addClass("collapsed");
-
+    $(this)
+      .parent()
+      .parent()
+      .parent()
+      .children("div.nav-link")
+      .addClass("collapsed");
   });
   $(".sidebar-nav .nav-link").click(function () {
     $(".sidebar-nav .nav-content a").removeClass("active");
@@ -138,3 +142,12 @@ $(document).ready(function () {
     $(this).addClass("collapsed");
   });
 });
+
+  // COPY
+  function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }

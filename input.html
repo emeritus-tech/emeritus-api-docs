@@ -19,7 +19,12 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;text&quot; placeholder=&quot;Small Input&quot; class=&quot;form--text--input form--text--input--small&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#input1')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="input1">&lt;input type=&quot;text&quot; placeholder=&quot;Small Input&quot; class=&quot;form--text--input form--text--input--small&quot;&gt;
 &lt;input type=&quot;text&quot; placeholder=&quot;Disabled Small Input&quot; class=&quot;form--text--input form--text--input--small&quot; disabled&gt;
 </code></pre>
     </div><br>
@@ -34,7 +39,12 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;text&quot; placeholder=&quot;Normal Input&quot; class=&quot;form--text--input&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#input2')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="input2">&lt;input type=&quot;text&quot; placeholder=&quot;Normal Input&quot; class=&quot;form--text--input&quot;&gt;
 &lt;input type=&quot;text&quot; placeholder=&quot;Disabled Normal Input&quot; class=&quot;form--text--input&quot; disabled&gt;
 </code></pre>
     </div><br>
@@ -50,7 +60,12 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;text&quot; placeholder=&quot;Large Input&quot; class=&quot;form--text--input form--text--input--large&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#input3')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="input3">&lt;input type=&quot;text&quot; placeholder=&quot;Large Input&quot; class=&quot;form--text--input form--text--input--large&quot;&gt;
 &lt;input type=&quot;text&quot; placeholder=&quot;Disabled Large Input&quot; class=&quot;form--text--input form--text--input--large&quot; disabled&gt;
 </code></pre>
     </div><br>
@@ -71,8 +86,23 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html" data-lang="html">&lt;input type=&quot;text&quot; placeholder=&quot;Large Input&quot; class=&quot;form--text--input form--text--input--large&quot;&gt;
-&lt;input type=&quot;text&quot; placeholder=&quot;Disabled Large Input&quot; class=&quot;form--text--input form--text--input--large&quot; disabled&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#input4')">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <pre class="chroma"><code class="language-html" data-lang="html" id="input4">&lt;div class=&quot;form--search--input-parent position--relative&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Small Input Field&quot; class=&quot;form--text--input form--text--input--small&quot;&gt;
+    &lt;span class=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form--search--input-parent position--relative&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Normal Input Field&quot; class=&quot;form--text--input&quot;&gt;
+    &lt;span class=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form--search--input-parent position--relative&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Large Input Field&quot; class=&quot;form--text--input form--text--input--large&quot;&gt;
+    &lt;span class=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+&lt;/div&gt;
 </code></pre>
     </div><br>
 

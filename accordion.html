@@ -12,7 +12,7 @@
         <div class="accordion">
             <div class="accordion__tab">
                 <input type="checkbox" class="accordion__tab--checkbox" id="tab1">
-                <label class="accordion__tab--label" for="tab1">Accordion Item #1</label>
+                <label class="accordion__tab--label" for="tab1" tabindex="0">Accordion Item #1</label>
                 <div class="accordion__tab--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
@@ -21,10 +21,15 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html">&lt;div class=&quot;accordion&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#accordion1')">
+                 <span class="material-symbols-outlined"> content_copy </span>
+             </button>
+       </div>
+        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="accordion1">&lt;div class=&quot;accordion&quot;&gt;
     &lt;div class=&quot;accordion__tab&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;accordion__tab--checkbox&quot; id=&quot;tab1&quot;&gt;
-        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab1&quot;&gt;Accordion Item #1&lt;/label&gt;
+        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab1&quot; tabindex=&quot;0&quot;&gt;Accordion Item #1&lt;/label&gt;
         &lt;div class=&quot;accordion__tab--content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
             exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;br&gt;&lt;br&gt;
@@ -38,7 +43,8 @@
         <div class="accordion">
             <div class="accordion__tab">
                 <input type="checkbox" class="accordion__tab--checkbox" id="tab2">
-                <label class="accordion__tab--label" for="tab2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <label class="accordion__tab--label" for="tab2" tabindex="0">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,
                     sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</label>
@@ -53,10 +59,15 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html">&lt;div class=&quot;accordion&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#accordion2')">
+                 <span class="material-symbols-outlined"> content_copy </span>
+             </button>
+       </div>
+        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="accordion2">&lt;div class=&quot;accordion&quot;&gt;
     &lt;div class=&quot;accordion__tab&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;accordion__tab--checkbox&quot; id=&quot;tab2&quot;&gt;
-        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab2&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab2&quot; tabindex=&quot;0&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/label&gt;
         &lt;div class=&quot;accordion__tab--content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,58 +84,64 @@
     <h2 class="heading-title">Accordion With Links</h2>
     <div class="bd-example">
         <div class="accordion">
-                <div class="accordion__tab">
-                    <input type="checkbox" class="accordion__tab--checkbox" id="tab3">
-                    <label class="accordion__tab--label" for="tab3">Accordion Item #3 <button role="button"
-                            class="btn__clear" aria-label="Clear" tabindex="0">Clear</button>
-                    </label>
-                    <div class="accordion__tab--content">
-                        <ul class="list--checkbox">
-                            <li>
-                                <input type="checkbox" id="checkbox-1" class="form-check-input" aria-label="Checkbox">
-                                <label class="form-check-label" for="checkbox-1">Default checkbox</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="checkbox-2" class="form-check-input" aria-label="Checkbox">
-                                <label class="form-check-label" for="checkbox-2">Default checkbox</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="checkbox-3" class="form-check-input" aria-label="Checkbox">
-                                <label class="form-check-label" for="checkbox-3">Default checkbox</label>
-                            </li>
-                        </ul>
-                        <p>
-                            <button role="button" class="show__more" aria-label="Show More" tabindex="0">Show
-                                More</button>
-                        </p>
-                    </div>
+            <div class="accordion__tab">
+                <input type="checkbox" class="accordion__tab--checkbox" id="tab3">
+                <label class="accordion__tab--label" for="tab3" tabindex="0">Accordion Item #3 <button role="button"
+                        class="btn__clear" aria-label="Clear" tabindex="0">Clear</button>
+                </label>
+                <div class="accordion__tab--content">
+                    <ul class="list--checkbox">
+                        <li>
+                            <div class="form-check-label-row"><input type="checkbox" id="checkbox-1"
+                                    class="form-check-input" aria-label="Checkbox" checked=""><label
+                                    class="form-check-label form-label-sm" for="checkbox-1">Item 1</label></div>
+                        </li>
+                        <li>
+                            <div class="form-check-label-row"><input type="checkbox" id="checkbox-2"
+                                    class="form-check-input" aria-label="Checkbox" checked=""><label
+                                    class="form-check-label form-label-sm" for="checkbox-2">Item 2</label></div>
+                        </li>
+                        <li>
+                            <div class="form-check-label-row"><input type="checkbox" id="checkbox-3"
+                                    class="form-check-input" aria-label="Checkbox" checked=""><label
+                                    class="form-check-label form-label-sm" for="checkbox-3">Item 3</label></div>
+                        </li>
+                    </ul>
+                    <p>
+                        <button role="button" class="show__more" aria-label="Show More" tabindex="0">Show
+                            More</button>
+                    </p>
                 </div>
+            </div>
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html">&lt;div class=&quot;accordion&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#accordion3')">
+                 <span class="material-symbols-outlined"> content_copy </span>
+             </button>
+       </div>
+        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="accordion3">&lt;div class=&quot;accordion&quot;&gt;
     &lt;div class=&quot;accordion__tab&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;accordion__tab--checkbox&quot; id=&quot;tab3&quot;&gt;
-        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab3&quot;&gt;Accordion Item #3 &lt;button role=&quot;button&quot; class=&quot;btn__clear&quot; aria-label=&quot;Clear&quot; tabindex=&quot;0&quot;&gt;Clear&lt;/button&gt;
+        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab3&quot; tabindex=&quot;0&quot;&gt;Accordion Item #3 &lt;button role=&quot;button&quot; class=&quot;btn__clear&quot; aria-label=&quot;Clear&quot; tabindex=&quot;0&quot;&gt;Clear&lt;/button&gt;
         &lt;/label&gt;
         &lt;div class=&quot;accordion__tab--content&quot;&gt;
         &lt;ul class=&quot;list--checkbox&quot;&gt;
-            &lt;li&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;
-                &lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-1&quot;&gt;Default checkbox&lt;/label&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;
-                &lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-2&quot;&gt;Default checkbox&lt;/label&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;
-                &lt;label class=&quot;form-check-label&quot; for=&quot;checkbox-3&quot;&gt;Default checkbox&lt;/label&gt;
-            &lt;/li&gt;
+            &lt;div class=&quot;form-check-label-row&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked=&quot;&quot;&gt;
+                &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-1&quot;&gt;Item 1&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check-label-row&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked=&quot;&quot;&gt;
+                &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-2&quot;&gt;Item 1&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-check-label-row&quot;&gt;
+                &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked=&quot;&quot;&gt;
+                &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-3&quot;&gt;Item 1&lt;/label&gt;
+            &lt;/div&gt;
         &lt;/ul&gt;
-        &lt;p&gt;
-            &lt;button role=&quot;button&quot; class=&quot;show__more&quot; aria-label=&quot;Show More&quot; tabindex=&quot;0&quot;&gt;Show More&lt;/button&gt;
-        &lt;/p&gt;
+        &lt;p&gt;&lt;button role=&quot;button&quot; class=&quot;show__more&quot; aria-label=&quot;Show More&quot; tabindex=&quot;0&quot;&gt;Show More&lt;/button&gt;&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;/div&gt;
@@ -136,7 +153,7 @@
         <div class="accordion">
             <div class="accordion__tab">
                 <input type="checkbox" class="accordion__tab--checkbox" id="tab4">
-                <label class="accordion__tab--label" for="tab4">Accordion Item #4 <span
+                <label class="accordion__tab--label" for="tab4" tabindex="0">Accordion Item #4 <span
                         class="accordion__btn-pill">4</span>
                 </label>
                 <div class="accordion__tab--content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
@@ -149,10 +166,15 @@
         </div>
     </div>
     <div class="highlight">
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html">&lt;div class=&quot;accordion&quot;&gt;
+        <div class="bd-clipboard">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#accordion4')">
+                 <span class="material-symbols-outlined"> content_copy </span>
+             </button>
+       </div>
+        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="accordion4">&lt;div class=&quot;accordion&quot;&gt;
     &lt;div class=&quot;accordion__tab&quot;&gt;
         &lt;input type=&quot;checkbox&quot; class=&quot;accordion__tab--checkbox&quot; id=&quot;tab4&quot;&gt;
-        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab4&quot;&gt;Accordion Item #4 &lt;span class=&quot;accordion__btn-pill&quot;&gt;4&lt;/span&gt;
+        &lt;label class=&quot;accordion__tab--label&quot; for=&quot;tab4&quot; tabindex=&quot;0&quot;&gt;Accordion Item #4 &lt;span class=&quot;accordion__btn-pill&quot;&gt;4&lt;/span&gt;
         &lt;/label&gt;
         &lt;div class=&quot;accordion__tab--content&quot;&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;br&gt;
         &lt;br&gt;
