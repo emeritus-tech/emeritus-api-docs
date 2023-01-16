@@ -102,11 +102,11 @@
     </div>
     <div class="highlight">
         <div class="bd-clipboard">
-            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#header2')">
+            <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#header3')">
                 <span class="material-symbols-outlined"> content_copy </span>
             </button>
         </div>
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="header2">&lt;header class=&quot;site--header site--header--version-first&quot;&gt;
+        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="header3">&lt;header class=&quot;site--header site--header--version-first&quot;&gt;
 &lt;div class=&quot;site--header__logo-link-wrapper&quot;&gt;
     &lt;a class=&quot;site--header__logo-link&quot; href=&quot;#&quot;&gt;
         &lt;img class=&quot;site--header__logo&quot; src=&quot;https://images.ctfassets.net/wkud0epjdpn7/70UrZ24j4NQxsJlMXrdkxK/fb6acf737f72bb8cb67fa07f9dcd3767/emeritus-logo.png&quot; /&gt;
@@ -139,6 +139,18 @@
 
     <div class="bd-example">
         <header class="site--header site--header--version-first">
+            <div class="m-search-wrapper">
+                <input type="checkbox" id="m-search-wrapper--input" name="menu" class="hidden-checkbox" />
+                <label class="m-search-wrapper--icon" for="m-search-wrapper--input"></label>
+                <form role="search">
+                    <div class="form--search--input-parent position--relative" style="margin-top: 0;height: 45px;">
+                        <input type="text" placeholder="Search" class="form--text--input" style="width: 100%;" />
+                        <span class="material-symbols-outlined search-icon position--absolute">
+                            search
+                        </span>
+                    </div>
+                </form>
+            </div>
             <div class="site--header__logo-link-wrapper">
                 <a class="site--header__logo-link" href="#">
                     <img class="site--header__logo"
@@ -148,7 +160,9 @@
             <nav class="site--header__menu">
                 <ul class="site--header__navigation">
                     <li class="site--header__menu--item">
-                        <a class="site--header__menu--link" href="#">Home</a>
+                        <a class="site--header__menu--link" href="#">
+                            Home
+                        </a>
                     </li>
                     <li class="site--header__menu--item">
                         <a class="site--header__menu--link" href="#">
@@ -186,13 +200,19 @@
                         </ul>
                     </li>
                     <li class="site--header__menu--item">
-                        <a class="site--header__menu--link" href="#">About</a>
+                        <a class="site--header__menu--link" href="#">
+                            About
+                        </a>
                     </li>
                     <li class="site--header__menu--item">
-                        <a class="site--header__menu--link" href="#">FAQ</a>
+                        <a class="site--header__menu--link" href="#">
+                            FAQ
+                        </a>
                     </li>
                     <li class="site--header__menu--item">
-                        <a class="site--header__menu--link" href="#">Blog</a>
+                        <a class="site--header__menu--link" href="#">
+                            Blog
+                        </a>
                     </li>
                     <li class="site--header__menu--item">
                         <form role="search">
@@ -211,6 +231,131 @@
                     </li>
                 </ul>
             </nav>
+            <div class="hamburger hamburger-wrapper">
+                <div class="hamburger__parent">
+                    <input type="checkbox" id="menu" name="menu" class="hidden-checkbox" />
+                    <label class="hamburger__toggle" id="hideHeader" for="menu">
+                        <span class="material-symbols-outlined hamburger__icon">
+                            menu
+                        </span>
+                    </label>
+                    <label class="hamburger__overlay" for="menu"></label>
+
+                    <div class="hamburger-menu">
+                        <div class="hamburger-menu__header hamburger-menu__header-main">
+                            <label class="hamburger__toggle" for="menu">
+                                <span class="material-symbols-outlined hamburger-menu__close-icon">
+                                    close
+                                </span>
+                            </label>
+                        </div>
+                        <ul class="hamburger-menu__list-group">
+                            <li>
+                                <a href="#" class="hamburger-menu__inner-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <label class="hamburger-menu__chevron-label" for="menu--item__topics">
+                                    Topics
+                                </label>
+                                <input type="checkbox" id="menu--item__topics" name="menu--item__topics"
+                                    class="hidden-checkbox" />
+                                <div class="hamburger-menu">
+                                    <div class="hamburger-menu__header hamburger-menu__header-action">
+                                        <label class="hamburger__toggle hamburger-menu__left-arrow-parent"
+                                            for="menu--item__topics">
+                                            <span class="material-symbols-outlined hamburger-menu__left-arrow">
+                                                chevron_left
+                                            </span>
+                                        </label>
+                                        <label class="hamburger-menu__sub-menu-heading">
+                                            Topics
+                                        </label>
+                                    </div>
+                                    <ul class="hamburger-menu__list-group">
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Data Science & Analytics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Product Design & Innovation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Digital Transformation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Finance
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Coding
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                AI / Machine Learning
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Sales & Marketing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Digital Marketing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Data Science & Analytics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Product Design & Innovation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Digital Transformation
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="hamburger-menu__inner-link">
+                                                Finance
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="hamburger-menu__inner-link">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hamburger-menu__inner-link">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="hamburger-menu__inner-link">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
     </div>
     <div class="highlight">
@@ -219,22 +364,32 @@
                 <span class="material-symbols-outlined"> content_copy </span>
             </button>
         </div>
-        <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="header2">&lt;header className=&quot;site--header site--header--version-first&quot;&gt;
-&lt;div className=&quot;site--header__logo-link-wrapper&quot;&gt;
-    &lt;a className=&quot;site--header__logo-link&quot; href=&quot;#&quot;&gt;
-        &lt;img className=&quot;site--header__logo&quot; src=&quot;https://images.ctfassets.net/wkud0epjdpn7/70UrZ24j4NQxsJlMXrdkxK/fb6acf737f72bb8cb67fa07f9dcd3767/emeritus-logo.png&quot; /&gt;
+<pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="header2">&lt;header class=&quot;site--header site--header--version-first&quot;&gt;
+&lt;div class=&quot;m-search-wrapper&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;m-search-wrapper--input&quot; name=&quot;menu&quot; class=&quot;hidden-checkbox&quot; /&gt;
+    &lt;label class=&quot;m-search-wrapper--icon&quot; for=&quot;m-search-wrapper--input&quot;&gt;&lt;/label&gt;
+    &lt;form role=&quot;search&quot;&gt;
+        &lt;div class=&quot;form--search--input-parent position--relative&quot;&gt;
+            &lt;input type=&quot;text&quot; placeholder=&quot;Search&quot; class=&quot;form--text--input&quot; /&gt;
+            &lt;span class=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+&lt;div class=&quot;site--header__logo-link-wrapper&quot;&gt;
+    &lt;a class=&quot;site--header__logo-link&quot; href=&quot;#&quot;&gt;
+        &lt;img class=&quot;site--header__logo&quot; src=&quot;https://images.ctfassets.net/wkud0epjdpn7/70UrZ24j4NQxsJlMXrdkxK/fb6acf737f72bb8cb67fa07f9dcd3767/emeritus-logo.png&quot; /&gt;
     &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;nav className=&quot;site--header__menu&quot;&gt;
-        &lt;ul className=&quot;site--header__navigation&quot;&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;a className=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;a className=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;
-                    &lt;span&gt;Courses&lt;/span&gt;
-                    &lt;span class=&quot;material-symbols-outlined&quot;&gt;expand_more&lt;/span&gt;
-                &lt;/a&gt;
+&lt;/div&gt;
+&lt;nav class=&quot;site--header__menu&quot;&gt;
+    &lt;ul class=&quot;site--header__navigation&quot;&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;a class=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;a class=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;
+                &lt;span&gt;Courses&lt;/span&gt;
+                &lt;span class=&quot;material-symbols-outlined&quot;&gt;expand_more&lt;/span&gt;
+            &lt;/a&gt;
                 &lt;ul&gt;
                     &lt;li&gt;
                         &lt;a href=&quot;#&quot;&gt;Data Science &amp; Analytics&lt;/a&gt;
@@ -260,33 +415,113 @@
                     &lt;li&gt;
                         &lt;a href=&quot;#&quot;&gt;Digitial Marketing&lt;/a&gt;
                     &lt;/li&gt;
-                    &lt;li className=&quot;site--header__view--all&quot;&gt;
+                    &lt;li class=&quot;site--header__view--all&quot;&gt;
                         &lt;a href=&quot;#&quot;&gt;View All Topics&lt;/a&gt;
                     &lt;/li&gt;
                 &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;a className=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;a className=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;FAQ&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;a className=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;Blog&lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;form role=&quot;search&quot;&gt;
-                    &lt;div className=&quot;form--search--input-parent position--relative&quot;&gt;
-                        &lt;input type=&quot;text&quot; placeholder=&quot;Search&quot; className=&quot;form--text--input&quot; /&gt;
-                        &lt;span className=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;a class=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;About&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;a class=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;FAQ&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;a class=&quot;site--header__menu--link&quot; href=&quot;#&quot;&gt;Blog&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;form role=&quot;search&quot;&gt;
+                &lt;div class=&quot;form--search--input-parent position--relative&quot;&gt;
+                    &lt;input type=&quot;text&quot; placeholder=&quot;Search&quot; class=&quot;form--text--input&quot; /&gt;
+                    &lt;span class=&quot;material-symbols-outlined search-icon position--absolute&quot;&gt;search&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;site--header__menu--item&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;btn btn--mid btn--white&quot; aria-label=&quot;Login&quot;&gt;Login&lt;/button&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;div class=&quot;hamburger hamburger-wrapper&quot;&gt;
+    &lt;div class=&quot;hamburger__parent&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;menu&quot; name=&quot;menu&quot; class=&quot;hidden-checkbox&quot; /&gt;
+        &lt;label class=&quot;hamburger__toggle&quot; id=&quot;hideHeader&quot; for=&quot;menu&quot;&gt;
+            &lt;span class=&quot;material-symbols-outlined hamburger__icon&quot;&gt;menu&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;hamburger__overlay&quot; for=&quot;menu&quot;&gt;&lt;/label&gt;
+        &lt;div class=&quot;hamburger-menu&quot;&gt;
+            &lt;div class=&quot;hamburger-menu__header hamburger-menu__header-main&quot;&gt;
+                &lt;label class=&quot;hamburger__toggle&quot; for=&quot;menu&quot;&gt;
+                    &lt;span class=&quot;material-symbols-outlined hamburger-menu__close-icon&quot;&gt;close&lt;/span&gt;
+                &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;ul class=&quot;hamburger-menu__list-group&quot;&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Home&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;label class=&quot;hamburger-menu__chevron-label&quot; for=&quot;menu--item__topics&quot;&gt;Topics&lt;/label&gt;
+                    &lt;input type=&quot;checkbox&quot; id=&quot;menu--item__topics&quot; name=&quot;menu--item__topics&quot; class=&quot;hidden-checkbox&quot; /&gt;
+                    &lt;div class=&quot;hamburger-menu&quot;&gt;
+                        &lt;div class=&quot;hamburger-menu__header hamburger-menu__header-action&quot;&gt;
+                            &lt;label class=&quot;hamburger__toggle hamburger-menu__left-arrow-parent&quot; for=&quot;menu--item__topics&quot;&gt;
+                                &lt;span class=&quot;material-symbols-outlined hamburger-menu__left-arrow&quot;&gt;chevron_left&lt;/span&gt;
+                            &lt;/label&gt;
+                            &lt;label class=&quot;hamburger-menu__sub-menu-heading&quot;&gt;Topics&lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;ul class=&quot;hamburger-menu__list-group&quot;&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Data Science &amp; Analytics&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Product Design &amp; Innovation&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Digital Transformation&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Finance&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Coding&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;AI / Machine Learning&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Sales &amp; Marketing&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Digital Marketing&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Data Science &amp; Analytics&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Product Design &amp; Innovation&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Digital Transformation&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Finance&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
                     &lt;/div&gt;
-                &lt;/form&gt;
-            &lt;/li&gt;
-            &lt;li className=&quot;site--header__menu--item&quot;&gt;
-                &lt;button type=&quot;button&quot; className=&quot;btn btn--mid btn--white&quot; aria-label=&quot;Login&quot;&gt;Login&lt;/button&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/nav&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;About&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;FAQ&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                    &lt;a href=&quot;#&quot; class=&quot;hamburger-menu__inner-link&quot;&gt;Blog&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 &lt;/header&gt;</code></pre>
     </div>
 
