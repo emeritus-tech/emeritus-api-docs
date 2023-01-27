@@ -5,247 +5,260 @@
 
 <section class="section dashboard">
     <p>
-        Create consistent cross-browser and cross-device checkboxes with our
-        completely rewritten checkbox component.
+        Create consistent cross-browser and cross-device checkboxes with our completely rewritten checkbox component.
     </p>
     <br />
 
     <h2 class="heading-title">Checkbox without label</h2>
-
-    <div class="bd-example">
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-1" class="form-check-input" aria-label="Checkbox" /><label
-                    class="form-check-label form-label-sm" for="checkbox-1"></label>
+    <div class="sub-sec-cntr">
+        <div class="bd-example">
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-1"><input type="checkbox" id="checkbox-1" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text"></span></label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-2"><input type="checkbox" id="checkbox-2" class="form-check-input" aria-label="Checkbox" checked /><span class="form-check-label__text"></span></label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-3"><input type="checkbox" id="checkbox-3" class="form-check-input" aria-label="Checkbox" disabled="" /><span class="form-check-label__text"></span></label>
+                </div>
+            </div>
+            <div class="">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-4">
+                        <input type="checkbox" id="checkbox-4" class="form-check-input" aria-label="Checkbox" checked disabled="" /><span class="form-check-label__text"></span>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-2" class="form-check-input" aria-label="Checkbox"
-                    checked="" /><label class="form-check-label form-label-sm" for="checkbox-2"></label>
+        <div class="highlight">
+            <div class="bd-clipboard">
+                <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#checkbox1')">
+                    <span class="material-symbols-outlined"> content_copy </span>
+                </button>
             </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-3" class="form-check-input" aria-label="Checkbox"
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-3"></label>
-            </div>
-        </div>
-        <div class="">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-4" class="form-check-input" aria-label="Checkbox" checked=""
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-4"></label>
-            </div>
-        </div>
-    </div>
-    <div class="highlight">
-        <div class="bd-clipboard">
-            <button type="button" class="btn-clipboard" title="Copy to clipboard"
-                onclick="copyToClipboard('#checkbox1')">
-                <span class="material-symbols-outlined"> content_copy </span>
-            </button>
-        </div>
-        <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox1">&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-1&quot;&gt;&lt;/label&gt;
+            <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox1">&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-1&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-1&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;&lt;/span&gt;&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-2&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-2&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-2&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;&lt;/span&gt;&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-3&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-3&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-3&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled=&quot;&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;&lt;/span&gt;&lt;/label&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-4&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-4&quot;&gt;&lt;/label&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-4&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-4&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked disabled=&quot;&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;&lt;/span&gt;&lt;/label&gt;
 &lt;/div&gt;</code></pre>
-    </div>
-    <br />
-
-    <h2 class="heading-title">Indeterminate Checkbox without label</h2>
-    <p>
-        Checkboxes can utilize the Indeterminate class when manually set via
-        JavaScript (there is no available HTML attribute for specifying it).
-    </p>
-
-    <div class="bd-example">
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-9" class="form-check-input-minus" aria-label="Checkbox" /><label
-                    class="form-check-label form-label-sm" for="checkbox-9"></label>
-            </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-10" class="form-check-input-minus" aria-label="Checkbox"
-                    checked="" /><label class="form-check-label form-label-sm" for="checkbox-10"></label>
-            </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-11" class="form-check-input-minus" aria-label="Checkbox"
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-11"></label>
-            </div>
-        </div>
-        <div class="">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-12" class="form-check-input-minus" aria-label="Checkbox" checked=""
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-12"></label>
-            </div>
         </div>
     </div>
-    <div class="highlight">
-        <div class="bd-clipboard">
-            <button type="button" class="btn-clipboard" title="Copy to clipboard"
-                onclick="copyToClipboard('#checkbox2')">
-                <span class="material-symbols-outlined"> content_copy </span>
-            </button>
-        </div>
-        <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox2">&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-9&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot;&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-9&quot;&gt;&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-10&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; checked&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-10&quot;&gt;&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-11&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-11&quot;&gt;&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-12&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; checked disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-12&quot;&gt;&lt;/label&gt;
-&lt;/div&gt;</code></pre>
-    </div>
-    <br />
 
     <h2 class="heading-title">Checkbox with label</h2>
     <p>
-        Checkboxes can utilize the Indeterminate class when manually set via
-        JavaScript (there is no available HTML attribute for specifying it).
+        Checkboxes can utilize the Indeterminate class when manually set via JavaScript (there is no available HTML attribute for specifying it).
     </p>
-
-    <div class="bd-example">
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-5" class="form-check-input" aria-label="Checkbox" /><label
-                    class="form-check-label form-label-sm" for="checkbox-5">Default With Label</label>
+    <div class="sub-sec-cntr">
+        <div class="bd-example">
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-5">
+                        <input type="checkbox" id="checkbox-5" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Default With Label</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-6">
+                        <input type="checkbox" id="checkbox-6" class="form-check-input" aria-label="Checkbox" checked /><span class="form-check-label__text">Active With Label</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-7">
+                        <input type="checkbox" id="checkbox-7" class="form-check-input" aria-label="Checkbox" disabled="" /><span class="form-check-label__text">Disabled With Label</span>
+                    </label>
+                </div>
+            </div>
+            <div class="">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-8">
+                        <input type="checkbox" id="checkbox-8" class="form-check-input" aria-label="Checkbox" disabled="" checked /><span class="form-check-label__text">Active Disabled With Label</span>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-6" class="form-check-input" aria-label="Checkbox"
-                    checked="" /><label class="form-check-label form-label-sm" for="checkbox-6">Active With
-                    Label</label>
+        <div class="highlight">
+            <div class="bd-clipboard">
+                <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#checkbox3')">
+                    <span class="material-symbols-outlined"> content_copy </span>
+                </button>
             </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-7" class="form-check-input" aria-label="Checkbox"
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-7">Disabled With
-                    Label</label>
-            </div>
-        </div>
-        <div class="">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-8" class="form-check-input" aria-label="Checkbox" checked=""
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-8">Active Disabled With
-                    Label</label>
-            </div>
+            <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox3">&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-5&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-5&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Default With Label&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-6&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-6&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Active With Label&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-7&quot;&gt; &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-7&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled=&quot;&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Disabled With Label&lt;/span&gt; &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-8&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-8&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled=&quot;&quot; checked /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Active Disabled With Label&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
         </div>
     </div>
-    <div class="highlight">
-        <div class="bd-clipboard">
-            <button type="button" class="btn-clipboard" title="Copy to clipboard"
-                onclick="copyToClipboard('#checkbox3')">
-                <span class="material-symbols-outlined"> content_copy </span>
-            </button>
-        </div>
-        <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox3">&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-5&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot;&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-5&quot;&gt;Default With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-6&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-6&quot;&gt;Active With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-7&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-7&quot;&gt;Disabled With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-8&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; checked disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-8&quot;&gt;Active Disabled With Label&lt;/label&gt;
-&lt;/div&gt;
-</code></pre>
-    </div>
-    <br />
 
-    <h2 class="heading-title">Indeterminate Checkbox with label</h2>
+    <h2 class="heading-title">Indeterminate Checkbox</h2>
     <p>
-        Checkboxes can utilize the Indeterminate class when manually set via
-        JavaScript (there is no available HTML attribute for specifying it).
+        Checkboxes can utilize the Indeterminate class when manually set via JavaScript (there is no available HTML attribute for specifying it).
     </p>
-
-    <div class="bd-example">
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-13" class="form-check-input-minus" aria-label="Checkbox" /><label
-                    class="form-check-label form-label-sm" for="checkbox-13">Default Indeterminate With Label</label>
+    <div class="sub-sec-cntr">
+        <div class="bd-example">
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-10"><input type="checkbox" id="checkbox-10" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text"></span></label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-11">
+                        <input type="checkbox" id="checkbox-11" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Active Indeterminate With Label</span>
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-check-label-row">
+                    <label class="form-check-label form-label-sm" for="checkbox-12">
+                        <input type="checkbox" id="checkbox-12" class="form-check-input" aria-label="Checkbox" disabled="" /><span class="form-check-label__text">Disabled Indeterminate With Label</span>
+                    </label>
+                </div>
             </div>
         </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-14" class="form-check-input-minus" aria-label="Checkbox"
-                    checked="" /><label class="form-check-label form-label-sm" for="checkbox-14">Active Indeterminate
-                    With Label</label>
+        <div class="highlight">
+            <div class="bd-clipboard">
+                <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#checkbox4')">
+                    <span class="material-symbols-outlined"> content_copy </span>
+                </button>
             </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-15" class="form-check-input-minus" aria-label="Checkbox"
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-15">Disabled Indeterminate
-                    With Label</label>
-            </div>
-        </div>
-        <div class="mb-3">
-            <div class="form-check-label-row">
-                <input type="checkbox" id="checkbox-16" class="form-check-input-minus" aria-label="Checkbox" checked=""
-                    disabled="" /><label class="form-check-label form-label-sm" for="checkbox-16">Active Disabled
-                    Indeterminate With Label</label>
-            </div>
+            <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox4">&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-10&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-10&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-11&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-11&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Active Indeterminate With Label&lt;/span&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-12&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-12&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; disabled=&quot;&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Disabled Indeterminate With Label&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
         </div>
     </div>
-    <div class="highlight">
-        <div class="bd-clipboard">
-            <button type="button" class="btn-clipboard" title="Copy to clipboard"
-                onclick="copyToClipboard('#checkbox4')">
-                <span class="material-symbols-outlined"> content_copy </span>
-            </button>
+
+    <h2 class="heading-title">Checkbox Group</h2>
+    <div class="sub-sec-cntr">
+        <div class="bd-example">
+            <div class="mb-3">
+                <div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-13">
+                            <input type="checkbox" id="checkbox-13" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Artificial Intelligence &amp; Machine Learning</span>
+                        </label>
+                    </div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-14">
+                            <input type="checkbox" id="checkbox-14" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Business Analytics</span>
+                        </label>
+                    </div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-15">
+                            <input type="checkbox" id="checkbox-15" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Data Science &amp; Analytics</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
-        <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox4">&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-13&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot;&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-13&quot;&gt;Default Indeterminate With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-14&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; checked&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-14&quot;&gt;Active Indeterminate With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-15&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-15&quot;&gt;Disabled Indeterminate With Label&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check-label-row&quot;&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-16&quot; class=&quot;form-check-input-minus&quot; aria-label=&quot;Checkbox&quot; checked disabled&gt;
-    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-16&quot;&gt;Active Disabled Indeterminate With Label&lt;/label&gt;
+        <div class="highlight">
+            <div class="bd-clipboard">
+                <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#checkbox4')">
+                    <span class="material-symbols-outlined"> content_copy </span>
+                </button>
+            </div>
+            <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox4">&lt;div&gt;
+    &lt;div class=&quot;form-check-label-row&quot;&gt;
+        &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-13&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-13&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Artificial Intelligence &amp;amp; Machine Learning&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-check-label-row&quot;&gt;
+        &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-14&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;checkbox-14&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Business Analytics&lt;/span&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-check-label-row&quot;&gt;
+        &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-15&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-15&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Data Science &amp;amp; Analytics&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
     </div>
-    <br />
+
+    <h2 class="heading-title">Checkbox Group with Count</h2>
+    <div class="sub-sec-cntr">
+        <div class="bd-example">
+            <div class="mb-3">
+                <div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-16">
+                            <input type="checkbox" id="checkbox-16" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Artificial Intelligence &amp; Machine Learning</span>
+                            <span class="form-check-label__count">(08)</span>
+                        </label>
+                    </div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-17">
+                            <input type="checkbox" id="checkbox-17" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Business Analytics</span><span class="form-check-label__count">(34)</span>
+                        </label>
+                    </div>
+                    <div class="form-check-label-row">
+                        <label class="form-check-label form-label-sm" for="checkbox-18">
+                            <input type="checkbox" id="checkbox-18" class="form-check-input" aria-label="Checkbox" /><span class="form-check-label__text">Data Science &amp; Analytics</span><span class="form-check-label__count">(13)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="bd-clipboard">
+                <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#checkbox4')">
+                    <span class="material-symbols-outlined"> content_copy </span>
+                </button>
+            </div>
+            <pre class="chroma"><code class="language-html" data-lang="html" id="checkbox4">&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-16&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-16&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Artificial Intelligence &amp;amp; Machine Learning&lt;/span&gt;&lt;span class=&quot;form-check-label__count&quot;&gt;(08)&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-17&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-17&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Business Analytics&lt;/span&gt;&lt;span class=&quot;form-check-label__count&quot;&gt;(34)&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-check-label-row&quot;&gt;
+    &lt;label class=&quot;form-check-label form-label-sm&quot; for=&quot;checkbox-18&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-18&quot; class=&quot;form-check-input&quot; aria-label=&quot;Checkbox&quot; /&gt;&lt;span class=&quot;form-check-label__text&quot;&gt;Data Science &amp;amp; Analytics&lt;/span&gt;&lt;span class=&quot;form-check-label__count&quot;&gt;(13)&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+    </div>
 </section>
 <script>
     hljs.highlightAll();
+    document.getElementById("checkbox-10").indeterminate = true;
+    document.getElementById("checkbox-11").indeterminate = true;
+    document.getElementById("checkbox-12").indeterminate = true;
 </script>

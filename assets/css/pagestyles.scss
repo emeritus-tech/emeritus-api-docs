@@ -57,6 +57,9 @@ a:hover {
       font-weight: 500;
     }
   }
+  .sub-sec-cntr{
+    margin-bottom: 30px;
+  }
 }
 
 .logo {
@@ -424,4 +427,9 @@ a:hover {
   .collapse:not(.show) {
     display: block !important;
   }
+}
+.dropdown-toggle::after {
+  border-top: 0.4em solid;
+  border-right: 0.4em solid transparent;
+  border-left: 0.4em solid transparent;
 }

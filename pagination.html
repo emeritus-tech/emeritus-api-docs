@@ -1,177 +1,146 @@
 <div class="page-title">
-  <h1>Pagination </h1>
+  <h1>Pagination</h1>
   <hr />
 </div>
 
 <section class="section dashboard">
-  <p>Documentation and examples for showing pagination to indicate a series of related content exists across multiple
-    pages.</p>
-  <br>
+  <p>Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
+  <br />
   <h2 class="heading-title">Large pagination</h2>
   <p>Click the accordions below to expand/collapse the accordion content.</p>
-  <div class="bd-example">
-    <nav class="pagination--nav" aria-label="navigation">
-      <ul class="pagination display--flex">
-        <li class="page--item disabled"><a class="page--link chevron--left"></a></li>
-        <li class="page--item active"><a class="page--link">1</a></li>
-        <li class="page--item"><a class="page--link">2</a></li>
-        <li class="page--item"><a class="page--link">3</a></li>
-        <li class="page--item"><a class="page--link chevron--right"></a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="highlight">
-    <div class="bd-clipboard">
-      <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination1')">
-        <span class="material-symbols-outlined"> content_copy </span>
-      </button>
-    </div>
-    <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination1">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
-    &lt;ul class=&quot;pagination display--flex&quot;&gt;
-        &lt;li class=&quot;page--item disabled&quot;&gt;&lt;a class=&quot;page--link chevron--left&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item active&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link chevron--right&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  <div class="sub-sec-cntr">
+      <div class="bd-example">
+          <nav class="pagination--nav" aria-label="navigation">
+              <ul class="pagination display--flex">
+                  <li class="page--item disabled"><button class="page--link chevron--left" type="button"></button></li>
+                  <li class="page--item active"><button class="page--link" type="button">1</button></li>
+                  <li class="page--item"><button class="page--link" type="button">2</button></li>
+                  <li class="page--item"><button class="page--link" type="button">3</button></li>
+                  <li class="page--item"><button class="page--link chevron--right" type="button"></button></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="highlight">
+          <div class="bd-clipboard">
+              <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination1')">
+                  <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+          </div>
+          <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination1">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
+  &lt;ul class=&quot;pagination display--flex&quot;&gt;
+      &lt;li class=&quot;page--item disabled&quot;&gt;&lt;button class=&quot;page--link chevron--left&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item active&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;1&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;2&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;3&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link chevron--right&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
-  </div><br><br>
+      </div>
+  </div>
 
   <h2 class="heading-title">Large pagination with dots</h2>
   <p>Click the accordions below to expand/collapse the accordion content.</p>
-  <div class="bd-example">
-    <nav class="pagination--nav" aria-label="navigation">
-      <ul class="pagination display--flex">
-        <li class="page--item disabled">
-          <a class="page--link chevron--left"></a>
-        </li>
-        <li class="page--item active">
-          <a class="page--link">1</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">2</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">3</a>
-        </li>
-        <li class="page--item page--item--parent">
-          <a class="page--link page--link--dots">...</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">20</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link chevron--right"></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="highlight">
-    <div class="bd-clipboard">
-      <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination2')">
-        <span class="material-symbols-outlined"> content_copy </span>
-      </button>
-    </div>
-    <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination2">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
-    &lt;ul class=&quot;pagination display--flex&quot;&gt;
-        &lt;li class=&quot;page--item disabled&quot;&gt;&lt;a class=&quot;page--link chevron--left&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item active&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item page--item--parent&quot;&gt;&lt;a class=&quot;page--link page--link--dots&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;20&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link chevron--right&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  <div class="sub-sec-cntr">
+      <div class="bd-example">
+          <nav class="pagination--nav" aria-label="navigation">
+              <ul class="pagination display--flex">
+                  <li class="page--item disabled"><button class="page--link chevron--left" type="button"></button></li>
+                  <li class="page--item active"><button class="page--link" type="button">1</button></li>
+                  <li class="page--item"><button class="page--link" type="button">2</button></li>
+                  <li class="page--item"><button class="page--link" type="button">3</button></li>
+                  <li class="page--item page--item--parent"><button class="page--link page--link--dots" type="button">...</button></li>
+                  <li class="page--item"><button class="page--link" type="button">20</button></li>
+                  <li class="page--item"><button class="page--link chevron--right" type="button"></button></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="highlight">
+          <div class="bd-clipboard">
+              <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination2')">
+                  <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+          </div>
+          <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination2">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
+  &lt;ul class=&quot;pagination display--flex&quot;&gt;
+      &lt;li class=&quot;page--item disabled&quot;&gt;&lt;button class=&quot;page--link chevron--left&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item active&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;1&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;2&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;3&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item page--item--parent&quot;&gt;&lt;button class=&quot;page--link page--link--dots&quot; type=&quot;button&quot;&gt;...&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;20&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link chevron--right&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
-  </div><br><br>
+      </div>
+  </div>
 
   <h2 class="heading-title">Small pagination</h2>
-  <div class="bd-example">
-    <nav class="pagination--nav" aria-label="navigation">
-      <ul class="pagination display--flex pagination--small">
-        <li class="page--item disabled">
-          <a class="page--link chevron--left"></a>
-        </li>
-        <li class="page--item active">
-          <a class="page--link">1</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">2</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">3</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link chevron--right"></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="highlight">
-    <div class="bd-clipboard">
-      <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination3')">
-        <span class="material-symbols-outlined"> content_copy </span>
-      </button>
-    </div>
-    <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination3">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
-    &lt;ul class=&quot;pagination display--flex pagination--small&quot;&gt;
-        &lt;li class=&quot;page--item disabled&quot;&gt;&lt;a class=&quot;page--link chevron--left&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item active&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link chevron--right&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  <div class="sub-sec-cntr">
+      <div class="bd-example">
+          <nav class="pagination--nav" aria-label="navigation">
+              <ul class="pagination display--flex pagination--small">
+                  <li class="page--item disabled"><button class="page--link chevron--left" type="button"></button></li>
+                  <li class="page--item active"><button class="page--link" type="button">1</button></li>
+                  <li class="page--item"><button class="page--link" type="button">2</button></li>
+                  <li class="page--item"><button class="page--link" type="button">3</button></li>
+                  <li class="page--item"><button class="page--link chevron--right" type="button"></button></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="highlight">
+          <div class="bd-clipboard">
+              <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination3')">
+                  <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+          </div>
+          <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination3">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
+  &lt;ul class=&quot;pagination display--flex pagination--small&quot;&gt;
+      &lt;li class=&quot;page--item disabled&quot;&gt;&lt;button class=&quot;page--link chevron--left&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item active&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;1&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;2&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;3&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link chevron--right&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
-  </div><br><br>
+      </div>
+  </div>
 
   <h2 class="heading-title">Small pagination with dots</h2>
-  <div class="bd-example">
-    <nav class="pagination--nav" aria-label="navigation">
-      <ul class="pagination display--flex pagination--small">
-        <li class="page--item disabled">
-          <a class="page--link chevron--left"></a>
-        </li>
-        <li class="page--item active">
-          <a class="page--link">1</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">2</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">3</a>
-        </li>
-        <li class="page--item page--item--parent">
-          <a class="page--link page--link--dots">...</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link">20</a>
-        </li>
-        <li class="page--item">
-          <a class="page--link chevron--right"></a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="highlight">
-    <div class="bd-clipboard">
-      <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination4')">
-        <span class="material-symbols-outlined"> content_copy </span>
-      </button>
-    </div>
-    <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination4">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
-    &lt;ul class=&quot;pagination display--flex pagination--small&quot;&gt;
-        &lt;li class=&quot;page--item disabled&quot;&gt;&lt;a class=&quot;page--link chevron--left&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item active&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item page--item--parent&quot;&gt;&lt;a class=&quot;page--link page--link--dots&quot;&gt;...&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link&quot;&gt;20&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;page--item&quot;&gt;&lt;a class=&quot;page--link chevron--right&quot;&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+  <div class="sub-sec-cntr">
+      <div class="bd-example">
+          <nav class="pagination--nav" aria-label="navigation">
+              <ul class="pagination display--flex pagination--small">
+                  <li class="page--item disabled"><button class="page--link chevron--left" type="button"></button></li>
+                  <li class="page--item active"><button class="page--link" type="button">1</button></li>
+                  <li class="page--item"><button class="page--link" type="button">2</button></li>
+                  <li class="page--item"><button class="page--link" type="button">3</button></li>
+                  <li class="page--item page--item--parent"><button class="page--link page--link--dots" type="button">...</button></li>
+                  <li class="page--item"><button class="page--link" type="button">20</button></li>
+                  <li class="page--item"><button class="page--link chevron--right" type="button"></button></li>
+              </ul>
+          </nav>
+      </div>
+      <div class="highlight">
+          <div class="bd-clipboard">
+              <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#pagination4')">
+                  <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+          </div>
+          <pre class="chroma"><code class="language-html hljs language-xml" data-lang="html" id="pagination4">&lt;nav class=&quot;pagination--nav&quot; aria-label=&quot;navigation&quot;&gt;
+  &lt;ul class=&quot;pagination display--flex pagination--small&quot;&gt;
+      &lt;li class=&quot;page--item disabled&quot;&gt;&lt;button class=&quot;page--link chevron--left&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item active&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;1&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;2&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;3&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item page--item--parent&quot;&gt;&lt;button class=&quot;page--link page--link--dots&quot; type=&quot;button&quot;&gt;...&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link&quot; type=&quot;button&quot;&gt;20&lt;/button&gt;&lt;/li&gt;
+      &lt;li class=&quot;page--item&quot;&gt;&lt;button class=&quot;page--link chevron--right&quot; type=&quot;button&quot;&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
-  </div><br><br>
-
+      </div>
   </div>
 </section>
-<script>hljs.highlightAll();</script>
+
+<script>
+  hljs.highlightAll();
+</script>
