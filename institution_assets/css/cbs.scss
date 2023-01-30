@@ -566,7 +566,7 @@ $input-padding-x-lg: 0.75rem;
       content: "";
       display: flex;
       box-sizing: border-box;
-      margin: 0 14px 3px 1px;
+      margin: 0 10px 3px 1px;
       border: 1px solid $gray-light-color;
       background: $white-color;
       border-radius: 2px;
@@ -622,7 +622,7 @@ $input-padding-x-lg: 0.75rem;
       opacity: 0.05;
     }
 
-    .form-check-label > input:focus {
+    .form-check-label > input:focus-visible {
       opacity: 0.15;
     }
 
@@ -1141,7 +1141,7 @@ $input-padding-x-lg: 0.75rem;
       content: "";
       display: flex;
       box-sizing: border-box;
-      margin: 0 14px 2px 0;
+      margin: 0 10px 2px 0;
       border: 2px solid $gray-light-color;
       background-color: $white-color;
       border-radius: 50%;
@@ -1182,7 +1182,7 @@ $input-padding-x-lg: 0.75rem;
       opacity: 0.05;
     }
 
-    .form-radio-label > input:focus {
+    .form-radio-label > input:focus-visible {
       opacity: 0.15;
     }
 
@@ -2043,3 +2043,4 @@ $input-padding-x-lg: 0.75rem;
     }
   }
 }
+
