@@ -2085,8 +2085,12 @@ $input-padding-x-lg: 0.75rem;
             white-space: pre;
             text-overflow: ellipsis;
             -webkit-appearance: none;
-            &.active {
+            &:hover {
               background: $gray-lighter-color;
+            }
+            &.active {
+              background: $secondary-lighter-color;
+              color: $white-color;
             }
           }
         }
