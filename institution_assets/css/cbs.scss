@@ -2535,6 +2535,17 @@ $input-padding-x-lg: 0.75rem;
     @media (max-width: 620px) {
       .testimonial--card {
         margin: 0 0 15px 0;
+        max-width: 100%;
+      }
+    }
+    @media (min-width: 621px) and (max-width:768px) {
+      .testimonial--card {
+        max-width: calc(50% - 48px);
+      }
+    }
+    @media (min-width: 769px) and (max-width:960px) {
+      .testimonial--card {
+        max-width: calc(50% - 54px);
       }
     }
   }
