@@ -20,33 +20,31 @@ $font-weight-bold: 700 !default;
 //----------------------------------
 :root {
   --black: 0, 0, 0;
-  --secondary-light-color: 233, 108, 75;
+  --secondary-light-color: 76, 76, 76;
 }
 
-$accent-color: #000D74;
+$accent-color: #E20788;
 $reverse-color: #fff;
 
-$primary-color: #0080c8;
-$primary-dark-color: #0080c8;
-$primary-alpha-dark-color: #0080c8;
+$primary-color: #E20788;
+$primary-dark-color: #E20788;
+$primary-alpha-dark-color: #E20788;
 $primary-light-color: #e5f9f0;
 $primary-alpha-light-color: #4ca881;
 $primary-alpha-lighter-color: rgba(232, 126, 60, 0.15);
 
-$secondary-color: #df6c4b;
-$secondary-light-color: #df6c4b;
-$secondary-lighter-color: #df6c4b;
-$secondary-alpha-dark-color: #000D74;
+$secondary-color: #4C4C4C;
+$secondary-light-color: #4C4C4C;
+$secondary-lighter-color: #4C4C4C;
+$secondary-alpha-dark-color: #0c2f40;
 $secondary-alpha-light-color: #597b8d;
 $secondary-alpha-lighter-color: #e9f2f7;
 
 $gray-color: #b1bac2;
 $gray-light-color: #e5e5e5;
 $gray-lighter-color: #f8f8fa;
-$gray-dark-color: #444;
-
-$gray-darker-color: #333;
-
+$gray-dark-color: #4C4C4C;
+$gray-darker-color: #222;
 $gray-alpha-dark-color: rgba(0, 0, 0, 0.05);
 
 $red-color: #d54308;
@@ -71,7 +69,6 @@ $input-padding-x-lg: 0.75rem;
 
 #main {
   font-family: $main-font-family;
-  color: $gray-darker-color;
 
   .highlight {
     padding: 7px;

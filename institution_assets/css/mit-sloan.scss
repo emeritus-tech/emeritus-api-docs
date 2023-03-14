@@ -20,22 +20,22 @@ $font-weight-bold: 700 !default;
 //----------------------------------
 :root {
   --black: 0, 0, 0;
-  --secondary-light-color: 233, 108, 75;
+  --secondary-light-color: 253,181,21;
 }
 
-$accent-color: #000D74;
+$accent-color: #a31f34;
 $reverse-color: #fff;
 
-$primary-color: #0080c8;
-$primary-dark-color: #0080c8;
-$primary-alpha-dark-color: #0080c8;
+$primary-color: #a31f34;
+$primary-dark-color: #a31f34;
+$primary-alpha-dark-color: #a31f34;
 $primary-light-color: #e5f9f0;
 $primary-alpha-light-color: #4ca881;
 $primary-alpha-lighter-color: rgba(232, 126, 60, 0.15);
 
-$secondary-color: #df6c4b;
-$secondary-light-color: #df6c4b;
-$secondary-lighter-color: #df6c4b;
+$secondary-color: #f6b221;
+$secondary-light-color: #f6b221;
+$secondary-lighter-color: #f6b221;
 $secondary-alpha-dark-color: #000D74;
 $secondary-alpha-light-color: #597b8d;
 $secondary-alpha-lighter-color: #e9f2f7;
@@ -45,7 +45,7 @@ $gray-light-color: #e5e5e5;
 $gray-lighter-color: #f8f8fa;
 $gray-dark-color: #444;
 
-$gray-darker-color: #333;
+$gray-darker-color: #545454;
 
 $gray-alpha-dark-color: rgba(0, 0, 0, 0.05);
 

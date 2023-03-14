@@ -1,0 +1,132 @@
+<div class="page-title">
+  <h1>Slider</h1>
+  <hr />
+</div>
+<section class="section dashboard">
+  <p>A slideshow component for cycling through elements—images or slides of text—like a slider.</p>
+  <br />
+  <h2 class="heading-title">Slider Demo</h2>
+  <div class="sub-sec-cntr">
+      <div class="bd-example">
+        <div class="slider">
+            <div class="slider__list">
+               <div class="slider__track">
+                  <div class="slider__slide fade">
+                     <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/0t0s0be5we3h84yb3p6592ahzn1l" class="full-width"></div>
+                  </div>
+                  <div class="slider__slide fade">
+                     <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/9gq9t7r3p52m8qv7yb2iz9f0bck0" class="full-width"></div>
+                  </div>
+                  <div class="slider__slide fade">
+                    <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/3j1ygbdf78du629znllpvrua5ug8" class="full-width"></div>
+                 </div>
+                 <div class="slider__slide fade">
+                    <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/i36fq3dbt1pyz55erijaxqpof9l5" class="full-width"></div>
+                 </div>
+                 <div class="slider__slide fade">
+                    <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/6cu44re04r528yv60tg56ouh8gfn" class="full-width"></div>
+                 </div>
+                 <div class="slider__slide fade">
+                    <div class="slider__slide-wrapper"><img src="https://d3srxiunz7lgh6.cloudfront.net/h4ln092t6qipxt34eoa6sxnmrpdv" class="full-width"></div>
+                 </div>
+               </div>
+            </div>
+
+            <div class="slider__action">
+                  <button class="slider__arrow slider__prev" aria-label="previous" onclick="plusSlides(-1)"></button>
+                  
+                  <div class="slider__dots">
+                     <button class="dot slider__active" onclick="currentSlide(1)"></button>
+                     <button class="dot" onclick="currentSlide(2)"></button>
+                     <button class="dot" onclick="currentSlide(3)"></button>
+                     <button class="dot" onclick="currentSlide(4)"></button>
+                     <button class="dot" onclick="currentSlide(5)"></button>
+                  </div>
+                  <button class="slider__arrow slider__next" aria-label="next" onclick="plusSlides(1)"></button>
+               </div>
+
+
+        </div>
+      </div>
+      <div class="highlight">
+          <div class="bd-clipboard">
+              <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#slider1')">
+                  <span class="material-symbols-outlined"> content_copy </span>
+              </button>
+          </div>
+          <pre
+              class="chroma"
+><code class="language-html hljs language-xml" data-lang="html" id="slider1">&lt;div class=&quot;slider&quot;&gt;
+    &lt;div class=&quot;slider__list&quot;&gt;
+        &lt;div class=&quot;slider__track&quot;&gt;
+            &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/0t0s0be5we3h84yb3p6592ahzn1l&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/9gq9t7r3p52m8qv7yb2iz9f0bck0&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/3j1ygbdf78du629znllpvrua5ug8&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/i36fq3dbt1pyz55erijaxqpof9l5&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/6cu44re04r528yv60tg56ouh8gfn&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;slider__slide fade&quot;&gt;
+            &lt;div class=&quot;slider__slide-wrapper&quot;&gt;&lt;img src=&quot;https://d3srxiunz7lgh6.cloudfront.net/h4ln092t6qipxt34eoa6sxnmrpdv&quot; class=&quot;full-width&quot; /&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;slider__action&quot;&gt;
+        &lt;button class=&quot;slider__arrow slider__prev&quot; aria-label=&quot;previous&quot; &gt;&lt;/button&gt;
+
+        &lt;div class=&quot;slider__dots&quot;&gt;
+            &lt;button class=&quot;slider__active&quot;&gt;&lt;/button&gt;
+            &lt;button&gt;&lt;/button&gt;
+            &lt;button&gt;&lt;/button&gt;
+            &lt;button&gt;&lt;/button&gt;
+            &lt;button&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;button class=&quot;slider__arrow slider__next&quot; aria-label=&quot;next&quot; &gt;&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+  </div>
+
+
+  
+</section>
+<script>
+  hljs.highlightAll();
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slider__slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" slider__active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " slider__active";
+}
+</script>
