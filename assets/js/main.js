@@ -125,6 +125,7 @@ $(document).ready(function () {
     href = $(this).attr("href");
     $("#main").load(href);
   });
+  
   $(".sidebar-nav .nav-content a").click(function () {
     $(".sidebar-nav .nav-content a").removeClass("active");
     $(".sidebar-nav .nav-link").removeClass("collapsed");

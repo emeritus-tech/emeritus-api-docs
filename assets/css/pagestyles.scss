@@ -433,3 +433,9 @@ a:hover {
   border-right: 0.4em solid transparent;
   border-left: 0.4em solid transparent;
 }
+.bs-container .dropdown-menu {
+  max-height: 400px !important;
+}
+.bs-container .inner {
+  max-height: 300px !important;
+}
