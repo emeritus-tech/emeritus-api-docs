@@ -108,18 +108,36 @@
         </div>
         <section class="section dashboard">
             <h2 class="heading-title">Programs API</h2>
-            <p>
-                <label class="form-label-md">Url: </label>
-                <button class="chip display--inline-block position--relative">
-                    <span
-                        class="chip__value secondary-light-color secondary-alpha-lighter-background-color display--inline-block">
-                        /api/v1/programs/programs_api/programs
-                    </span>
-                </button>
-                <br /><br />
-                <label class="form-label-md">Description: </label>
-                <label>Returns all programs list</label>
-            </p>
+            <div class="sub-sec-cntr">
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Path</label>
+                                </td>
+                                <td>
+                                    <code>/api/v1/programs_api/programs</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Authentication header</label>
+                                </td>
+                                <td>
+                                    <code>HTTP-EE-RESOURCES-API-KEY: your_api_token_value</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <br />
             <h2 class="heading-title">Parameters</h2>
             <div class="sub-sec-cntr">
@@ -158,9 +176,9 @@
                     </button>
                 </div>
                 <pre class="chroma"><code class="language-json hljs language-json" data-lang="json" id="paragraphy1">
-                    {
-                        "example": "response"
-                    }
+{
+    "example": "response"
+}
                 </code></pre>
             </div>
         </section>
