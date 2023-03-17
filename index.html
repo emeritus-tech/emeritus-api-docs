@@ -132,19 +132,47 @@
                 <br>
                 You can find the base URLs for each environment below:
                 <br>
-                <br>
-                <code>Staging: https://staging.emerituss.org/api/v1/</code>
-                <br>
-                <code>Production: https://admissions.emeritus.org/api/v1/</code>
             </p>
+            <div class="sub-sec-cntr">
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Environment</th>
+                                <th>Url</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h6>staging</h6>
+                                </td>
+                                <td>
+                                    <code>https://staging.emerituss.org/api/v1/</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>production</h6>
+                                </td>
+                                <td>
+                                    <code>https://admissions.emerituss.org/api/v1/</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
         <section class="section dashboard">
             <h2 class="heading-title">Authentication</h2>
             <br />
             <p>
-                We use token based authentication to authorize access to our APIs. We will provide your own token to use
-                in the requests.
-                Please contact us if you need a token.
+                Emeritus APIs uses token based authentication to authorize access to our APIs. Each API has its own
+                authorization
+                header name, you will see on each api documentation how to authorize them.
+                <br>We will provide your own token to use in the requests.
+                Please contact us if you need one.
             </p>
         </section>
     </main>
