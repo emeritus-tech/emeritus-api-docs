@@ -1,2 +1,2 @@
-# blueprint-landing-page
-Landing page for blueprint to under more what's blue print is about
+# emeritus-api-docs
+Emeritus API's documentation
