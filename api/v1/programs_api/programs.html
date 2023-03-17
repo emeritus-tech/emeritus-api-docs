@@ -88,11 +88,11 @@
             <li class="nav-item">
                 <div class="nav-link">
                     <span class="material-symbols-outlined icon-left">tune</span>
-                    <span>Programs API</span>
+                    <span>Customize</span>
                 </div>
                 <ul id="customize-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="api/v1/programs_api/programs.html" class="csp"> Programs </a>
+                        <a href="color.html" class="csp"> Color </a>
                     </li>
                 </ul>
             </li>
@@ -103,12 +103,83 @@
     <!--main-->
     <main id="main" class="main">
         <div class="page-title">
-            <h1>Getting started</h1>
+            <h1>Programs API</h1>
             <hr />
         </div>
         <section class="section dashboard">
-            <h2 class="heading-title">Welcome to our apis</h2>
+            <div class="sub-sec-cntr">
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label>Path</label>
+                                </td>
+                                <td>
+                                    <code>/api/v1/programs_api/programs</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Authentication header</label>
+                                </td>
+                                <td>
+                                    <code>HTTP-EE-RESOURCES-API-KEY: your_api_token_value</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <br />
+            <h2 class="heading-title">Parameters</h2>
+            <div class="sub-sec-cntr">
+                <div class="bd-example">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <code>param</code>
+                                </td>
+                                <td>
+                                    <code>string</code>
+                                </td>
+                                <td>
+                                    <span>This is a param description</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h2 class="heading-title">Response</h2>
+            <div class="highlight">
+                <div class="bd-clipboard">
+                    <button type="button" class="btn-clipboard" title="Copy to clipboard"
+                        onclick="copyToClipboard('#paragraphy1')">
+                        <span class="material-symbols-outlined"> content_copy </span>
+                    </button>
+                </div>
+                <pre class="chroma"><code class="language-json hljs language-json" data-lang="json" id="paragraphy1">
+{
+    "example": "response"
+}
+                </code></pre>
+            </div>
         </section>
     </main>
     <!--End main-->
