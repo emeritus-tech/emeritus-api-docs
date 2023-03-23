@@ -1,0 +1,445 @@
+<div class="page-title">
+  <h1>Generic Leads - B2B API</h1>
+  <hr />
+</div>
+<section class="section dashboard">
+  <div class="sub-sec-cntr">
+    <div class="bd-example">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label>Path</label>
+            </td>
+            <td>
+              <code>/api/v1/generic_lead</code>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Authentication header</label>
+            </td>
+            <td>
+              <code>LEAD-WEBHOOK-KEY: your_api_token_value</code>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br />
+  <h2 class="heading-title">Parameters</h2>
+  <div class="sub-sec-cntr">
+    <div class="bd-example">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Required</th>
+            <th>Example</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+					<tr>
+            <td>
+              <code>inquiring_for</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>team</span>
+            </td>
+            <td>
+              <span>When this field value is 'team' we change the flow to use b2b ones. So 'team' should be always</span>
+            </td>
+          </tr>
+					<tr>
+            <td>
+              <code>company</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>Emeritus</span>
+            </td>
+            <td>
+              <span>Company name</span>
+            </td>
+          </tr>
+					<tr>
+            <td>
+              <code>number_of_participans</code>
+            </td>
+            <td>
+              <code>integer</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>5</span>
+            </td>
+            <td>
+              <span>2 = 1-2;</span>
+							<span>5 = 3-5;</span>
+							<span>11 = 6-11;</span>
+							<span>12 = 12+</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>course_code</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>KLG-DMS</span>
+            </td>
+            <td>
+              <span>Used to fetch the program</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>agree</code>
+            </td>
+            <td>
+              <code>boolean</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>1</span>
+            </td>
+            <td>
+              <span>0 = False;</span>
+              <span>1 = True</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>country</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>UY</span>
+            </td>
+            <td>
+              <span>Use 2 digits ISO code</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>last_name</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>Ferreira</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>email</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>juan@email.com</span>
+            </td>
+            <td>
+              <span>Should be a valid email address</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>phone</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>+5555555555</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>utm_source</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>Yes</code>
+            </td>
+            <td>
+              <span>vendorname</span>
+            </td>
+            <td>
+              <span>Will represent the vendor name in one word (ex: educationdynamics)</span>
+            </td>
+          </tr>
+					<tr>
+            <td>
+              <code>first_name</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span>Juan</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>work_experience</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span>5-10 years</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>job_title</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span>Developer</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>batch_name</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span>B-1234</span>
+            </td>
+            <td>
+              <span>DEPRECATED, used to fetch the program</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>utm_campaign</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span>B-1234_some_utm_campaing</span>
+            </td>
+            <td>
+              <span>DEPRECATED</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>utm_content</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <span>Can be used for optional data from vendors</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <code>utm_placement</code>
+            </td>
+            <td>
+              <code>string</code>
+            </td>
+            <td>
+              <code>No</code>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2 class="heading-title">Payload</h2>
+  <div class="highlight">
+    <div class="bd-clipboard">
+      <button type="button" class="btn-clipboard" title="Copy to clipboard" onclick="copyToClipboard('#payload')">
+        <span class="material-symbols-outlined"> content_copy </span>
+      </button>
+    </div>
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="payload">
+        {
+					"inquiring_for": "team",
+					"company": "Emeritus",
+					"number_of_participans": "5",
+          "course_code": "KLG-DMS",
+          "agree": 1,
+          "country": "UY",
+          "first_name": "Juan",
+          "last_name": "Ferreira",
+          "email": "juan@email.com",
+          "phone": "+5555555555",
+          "utm_source": "vendorname",
+          "work_experience": "5-10 years",
+          "job_title": "Developer",
+          "batch_name": "B-1234",
+          "utm_campaign": "B-1234_some_utm_campaing",
+          "utm_content": "",
+          "utm_placement": ""
+        }
+      </code>
+    </pre>
+  </div>
+
+  <h2 class="heading-title">Response</h2>
+  <h3 class="heading-title">200</h3>
+  <div class="highlight">
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="paragraphy1">
+        {
+          "lead": "94ab3b43-3209-4534-8afe-52070644866f"
+        }
+      </code>
+    </pre>
+  </div>
+  <h3 class="heading-title">422</h3>
+  <div class="highlight">
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="paragraphy2">
+        {
+					"title": "Could not save the lead",
+					"errors": {
+							"full_name": [
+									"required"
+							]
+					}
+			}
+      </code>
+    </pre>
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="paragraphy3">
+        {
+					"title": "Could not save the lead",
+					"errors": {
+							"number_of_participants": [
+									"required",
+									"is not included in the list"
+							]
+					}
+			}
+      </code>
+    </pre>
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="paragraphy4">
+        {
+					"title": "Could not save the lead",
+					"errors": {
+							"name": [
+									"required"
+							],
+							"company_name": [
+									"required"
+							]
+					}
+			}
+      </code>
+    </pre>
+  </div>
+  <h3 class="heading-title">401</h3>
+  <div class="highlight">
+    <pre class="chroma">
+      <code class="language-json hljs" data-lang="json" id="paragraphy5">
+        {
+          "error": "This is not an authorized request"
+        }
+      </code>
+    </pre>
+  </div>
+</section>
